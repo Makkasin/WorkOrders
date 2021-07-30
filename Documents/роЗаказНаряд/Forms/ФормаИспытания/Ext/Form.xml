@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Результат испытаний оборудования</v8:content>
+		</v8:item>
+	</Title>
+	<CommandBarLocation>None</CommandBarLocation>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="ДатаИспытания" id="1">
+			<DataPath>ДатаИспытания</DataPath>
+			<ContextMenu name="ДатаИспытанияКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ДатаИспытанияРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<UsualGroup name="Группа1" id="50">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="51"/>
+			<ChildItems>
+				<UsualGroup name="Группа2" id="52">
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="53"/>
+					<ChildItems>
+						<InputField name="ВыявленныеДефекты" id="4">
+							<DataPath>ВыявленныеДефекты</DataPath>
+							<ContextMenu name="ВыявленныеДефектыКонтекстноеМеню" id="5"/>
+							<ExtendedTooltip name="ВыявленныеДефектыРасширеннаяПодсказка" id="6"/>
+						</InputField>
+						<InputField name="Заключение" id="7">
+							<DataPath>Заключение</DataPath>
+							<ContextMenu name="ЗаключениеКонтекстноеМеню" id="8"/>
+							<ExtendedTooltip name="ЗаключениеРасширеннаяПодсказка" id="9"/>
+						</InputField>
+						<InputField name="ОписаниеБрака" id="58">
+							<DataPath>ОписаниеБрака</DataPath>
+							<ContextMenu name="ОписаниеБракаКонтекстноеМеню" id="59"/>
+							<ExtendedTooltip name="ОписаниеБракаРасширеннаяПодсказка" id="60"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Группа3" id="54">
+					<Group>AlwaysHorizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="55"/>
+					<ChildItems>
+						<Button name="ПечатьИСменаСтатуса" id="56">
+							<Type>UsualButton</Type>
+							<Height>3</Height>
+							<CommandName>Form.Command.ПечатьИСменаСтатуса</CommandName>
+							<BackColor>web:Wheat</BackColor>
+							<Font bold="true" kind="AutoFont"/>
+							<ExtendedTooltip name="ПечатьИСменаСтатусаРасширеннаяПодсказка" id="57"/>
+						</Button>
+						<Button name="ПечатьДефектныеВедомости" id="61">
+							<Type>UsualButton</Type>
+							<Height>3</Height>
+							<CommandName>Form.Command.ПечатьДефектныеВедомости</CommandName>
+							<BackColor>web:Wheat</BackColor>
+							<Font bold="true" kind="AutoFont"/>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Печать
+дефектные ведомости</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ПечатьДефектныеВедомостиРасширеннаяПодсказка" id="62"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="тблОборудование" id="10">
+			<Representation>List</Representation>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>тблОборудование</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="тблОборудованиеКонтекстноеМеню" id="11"/>
+			<AutoCommandBar name="тблОборудованиеКоманднаяПанель" id="12"/>
+			<ExtendedTooltip name="тблОборудованиеРасширеннаяПодсказка" id="13"/>
+			<SearchStringAddition name="тблОборудованиеСтрокаПоиска" id="14">
+				<AdditionSource>
+					<Item>тблОборудование</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="тблОборудованиеСтрокаПоискаКонтекстноеМеню" id="15"/>
+				<ExtendedTooltip name="тблОборудованиеСтрокаПоискаРасширеннаяПодсказка" id="16"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="тблОборудованиеСостояниеПросмотра" id="17">
+				<AdditionSource>
+					<Item>тблОборудование</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="тблОборудованиеСостояниеПросмотраКонтекстноеМеню" id="18"/>
+				<ExtendedTooltip name="тблОборудованиеСостояниеПросмотраРасширеннаяПодсказка" id="19"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="тблОборудованиеУправлениеПоиском" id="20">
+				<AdditionSource>
+					<Item>тблОборудование</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="тблОборудованиеУправлениеПоискомКонтекстноеМеню" id="21"/>
+				<ExtendedTooltip name="тблОборудованиеУправлениеПоискомРасширеннаяПодсказка" id="22"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<InputField name="тблОборудованиеОборудование" id="23">
+					<DataPath>тблОборудование.ЗаказНаряд</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ChoiceForm>Document.роЗаказНаряд.Form.ФормаСпискаВРаботе</ChoiceForm>
+					<ContextMenu name="тблОборудованиеОборудованиеКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="тблОборудованиеОборудованиеРасширеннаяПодсказка" id="25"/>
+					<Events>
+						<Event name="AutoComplete">тблОборудованиеОборудованиеАвтоПодбор</Event>
+						<Event name="TextEditEnd">тблОборудованиеОборудованиеОкончаниеВводаТекста</Event>
+					</Events>
+				</InputField>
+				<InputField name="тблОборудованиеЗаказНарядОборудование" id="41">
+					<DataPath>тблОборудование.ЗаказНаряд.Оборудование</DataPath>
+					<ContextMenu name="тблОборудованиеЗаказНарядОборудованиеКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="тблОборудованиеЗаказНарядОборудованиеРасширеннаяПодсказка" id="43"/>
+				</InputField>
+				<InputField name="тблОборудованиеЗаказНарядНомерОборудования" id="44">
+					<DataPath>тблОборудование.ЗаказНаряд.НомерОборудования</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>19</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<ContextMenu name="тблОборудованиеЗаказНарядНомерОборудованияКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="тблОборудованиеЗаказНарядНомерОборудованияРасширеннаяПодсказка" id="46"/>
+				</InputField>
+				<InputField name="тблОборудованиеПроизводитель" id="26">
+					<DataPath>тблОборудование.Производитель</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="тблОборудованиеПроизводительКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="тблОборудованиеПроизводительРасширеннаяПодсказка" id="28"/>
+				</InputField>
+				<InputField name="тблОборудованиеДатаИзготовления" id="29">
+					<DataPath>тблОборудование.ДатаИзготовления</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="тблОборудованиеДатаИзготовленияКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="тблОборудованиеДатаИзготовленияРасширеннаяПодсказка" id="31"/>
+				</InputField>
+				<InputField name="тблОборудованиеЗаказНарядСтатус" id="47">
+					<DataPath>тблОборудование.ЗаказНаряд.Статус</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="тблОборудованиеЗаказНарядСтатусКонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="тблОборудованиеЗаказНарядСтатусРасширеннаяПодсказка" id="49"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<InputField name="Испытатель" id="32">
+			<DataPath>Испытатель</DataPath>
+			<ContextMenu name="ИспытательКонтекстноеМеню" id="33"/>
+			<ExtendedTooltip name="ИспытательРасширеннаяПодсказка" id="34"/>
+		</InputField>
+		<InputField name="Мастер" id="38">
+			<DataPath>Мастер</DataPath>
+			<ContextMenu name="МастерКонтекстноеМеню" id="39"/>
+			<ExtendedTooltip name="МастерРасширеннаяПодсказка" id="40"/>
+		</InputField>
+		<InputField name="Контролер" id="35">
+			<DataPath>Контролер</DataPath>
+			<ContextMenu name="КонтролерКонтекстноеМеню" id="36"/>
+			<ExtendedTooltip name="КонтролерРасширеннаяПодсказка" id="37"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ДатаИспытания" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата испытания</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Испытатель" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Испытатель</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ФизическиеЛица</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Мастер" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Мастер</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ФизическиеЛица</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Контролер" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Контролер</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ФизическиеЛица</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВыявленныеДефекты" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выявленные дефекты</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ро_Дефекты</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Заключение" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заключение</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ро_Заключения</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="тблОборудование" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Оборудование</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ЗаказНаряд" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Заказ наряд</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:DocumentRef.роЗаказНаряд</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Производитель" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Производитель</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ро_Производители</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ДатаИзготовления" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата изготовления</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ОписаниеБрака" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Описание брака при наличии</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>222</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПечатьИСменаСтатуса" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать и смена статуса</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать и смена статуса</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПечатьИСменаСтатуса</Action>
+		</Command>
+		<Command name="ПечатьДефектныеВедомости" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать дефектные ведомости</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать дефектные ведомости</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПечатьДефектныеВедомости</Action>
+		</Command>
+	</Commands>
+</Form>
