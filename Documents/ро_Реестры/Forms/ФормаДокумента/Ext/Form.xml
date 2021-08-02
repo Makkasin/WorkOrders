@@ -135,13 +135,6 @@
 									<ContextMenu name="ДоговорКонтекстноеМеню" id="110"/>
 									<ExtendedTooltip name="ДоговорРасширеннаяПодсказка" id="111"/>
 								</InputField>
-								<InputField name="ГруппаОборудования" id="10">
-									<DataPath>Объект.ГруппаОборудования</DataPath>
-									<Visible>false</Visible>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="ГруппаОборудованияКонтекстноеМеню" id="11"/>
-									<ExtendedTooltip name="ГруппаОборудованияРасширеннаяПодсказка" id="12"/>
-								</InputField>
 							</ChildItems>
 						</UsualGroup>
 					</ChildItems>
@@ -170,6 +163,18 @@
 							<Events>
 								<Event name="OnChange">СуммаРестраПриИзменении</Event>
 							</Events>
+						</InputField>
+						<InputField name="ФильтрОтбораДляРеестра" id="144">
+							<DataPath>Объект.ФильтрОтбораДляРеестра</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Фильтр</v8:content>
+								</v8:item>
+							</Title>
+							<ClearButton>true</ClearButton>
+							<ContextMenu name="ФильтрОтбораДляРеестраКонтекстноеМеню" id="145"/>
+							<ExtendedTooltip name="ФильтрОтбораДляРеестраРасширеннаяПодсказка" id="146"/>
 						</InputField>
 					</ChildItems>
 				</UsualGroup>
