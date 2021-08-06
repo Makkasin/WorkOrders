@@ -1541,6 +1541,7 @@
 			<Form>ФормаГруппы</Form>
 			<Form>ФормаСписка</Form>
 			<Form>ФормаВыбора</Form>
+			<Form>ФормаВыбораГруппы</Form>
 		</ChildObjects>
 	</Catalog>
 </MetaDataObject>

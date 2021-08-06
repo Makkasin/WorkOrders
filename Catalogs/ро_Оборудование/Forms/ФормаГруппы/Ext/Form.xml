@@ -130,7 +130,15 @@
 							<DataPath>Объект.Дефектовка</DataPath>
 							<RowFilter xsi:nil="true"/>
 							<ContextMenu name="ДефектовкаКонтекстноеМеню" id="81"/>
-							<AutoCommandBar name="ДефектовкаКоманднаяПанель" id="82"/>
+							<AutoCommandBar name="ДефектовкаКоманднаяПанель" id="82">
+								<ChildItems>
+									<Button name="НаименованиеДляКонтрагентаСкопироватьДефектовку" id="134">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.СкопироватьДефектовку</CommandName>
+										<ExtendedTooltip name="НаименованиеДляКонтрагентаСкопироватьДефектовкуРасширеннаяПодсказка" id="135"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
 							<ExtendedTooltip name="ДефектовкаРасширеннаяПодсказка" id="83"/>
 							<SearchStringAddition name="ДефектовкаСтрокаПоиска" id="84">
 								<AdditionSource>
@@ -418,4 +426,21 @@
 			<SavedData>true</SavedData>
 		</Attribute>
 	</Attributes>
+	<Commands>
+		<Command name="СкопироватьДефектовку" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Скопировать дефектовку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Скопировать дефектовку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СкопироватьДефектовку</Action>
+		</Command>
+	</Commands>
 </Form>

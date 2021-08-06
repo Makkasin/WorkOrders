@@ -579,6 +579,7 @@
 		<index>13</index>
 		<row>
 			<c>
+				<i>1</i>
 				<c>
 					<f>37</f>
 					<tl>
@@ -587,11 +588,6 @@
 							<v8:content>Заказчик</v8:content>
 						</v8:item>
 					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>17</f>
 				</c>
 			</c>
 			<c>
@@ -626,11 +622,7 @@
 		<index>14</index>
 		<row>
 			<c>
-				<c>
-					<f>7</f>
-				</c>
-			</c>
-			<c>
+				<i>1</i>
 				<c>
 					<f>39</f>
 				</c>
@@ -663,7 +655,7 @@
 			<formatIndex>9</formatIndex>
 			<c>
 				<c>
-					<f>41</f>
+					<f>7</f>
 				</c>
 			</c>
 			<c>
@@ -675,6 +667,11 @@
 				<c>
 					<f>42</f>
 					<parameter>ФИОКа</parameter>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>43</f>
 				</c>
 			</c>
 			<c>
@@ -845,7 +842,7 @@
 		<area>
 			<type>Rows</type>
 			<beginRow>11</beginRow>
-			<endRow>12</endRow>
+			<endRow>16</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>

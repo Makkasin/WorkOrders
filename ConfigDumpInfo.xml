@@ -186,7 +186,7 @@
 			<Metadata name="Catalog.ро_ИдентификаторСкладаЗаказчика.Attribute.НаименованиеЗаказчикаНаПечать" id="27ec3eef-9e07-408c-a8f8-5000e4a16f33"/>
 			<Metadata name="Catalog.ро_ИдентификаторСкладаЗаказчика.Attribute.Организация" id="60b7c4b2-9108-49df-a678-0f1b4ccfea88"/>
 		</Metadata>
-		<Metadata name="Catalog.ро_Оборудование" id="f5f0e566-e4b5-463b-8d4d-c4040b8695f4" configVersion="c2ba157a3f7ef84d89404ea8a801e0ab00000000">
+		<Metadata name="Catalog.ро_Оборудование" id="f5f0e566-e4b5-463b-8d4d-c4040b8695f4" configVersion="6938f2ce74773045b9816d8e973bd78b00000000">
 			<Metadata name="Catalog.ро_Оборудование.Attribute.ПроверкаГОСТ" id="07f59743-e6d9-4096-8a14-50b6a9400bdd"/>
 			<Metadata name="Catalog.ро_Оборудование.TabularSection.ПечатныеФормы.Attribute.Контрагент" id="0cceb9bd-60d1-4505-bab9-6da267246f64"/>
 			<Metadata name="Catalog.ро_Оборудование.Attribute.ДатаИзменения" id="0f1c1591-6831-485e-bf04-d66a5ab994c2"/>
@@ -220,8 +220,10 @@
 		</Metadata>
 		<Metadata name="Catalog.ро_Оборудование.Form.ФормаВыбора" id="91daa7f8-b0f4-4c35-8999-d2be16025e62" configVersion="bad694a01700424cbb93751e85eb189600000000"/>
 		<Metadata name="Catalog.ро_Оборудование.Form.ФормаВыбора.Form" id="91daa7f8-b0f4-4c35-8999-d2be16025e62.0" configVersion="c6f7dc2fb41be146aaa1af6dcf2386f200000000"/>
-		<Metadata name="Catalog.ро_Оборудование.Form.ФормаГруппы" id="0c216cbd-5bbe-4707-8dad-178c3fc49e77" configVersion="04dedc584e2033429000217fa8bf36da00000000"/>
-		<Metadata name="Catalog.ро_Оборудование.Form.ФормаГруппы.Form" id="0c216cbd-5bbe-4707-8dad-178c3fc49e77.0" configVersion="e7b9eb35a5208546ac54dfacf7df50f700000000"/>
+		<Metadata name="Catalog.ро_Оборудование.Form.ФормаВыбораГруппы" id="283d9a27-c7dd-48cc-86a4-fd282f88a1c8" configVersion="212f14e748c3514ab56a282c9a41971f00000000"/>
+		<Metadata name="Catalog.ро_Оборудование.Form.ФормаВыбораГруппы.Form" id="283d9a27-c7dd-48cc-86a4-fd282f88a1c8.0" configVersion="d08ea2814bd3904d8f9583f8f5212fb000000000"/>
+		<Metadata name="Catalog.ро_Оборудование.Form.ФормаГруппы" id="0c216cbd-5bbe-4707-8dad-178c3fc49e77" configVersion="5b3b4adccaf268408c61baf70169172d00000000"/>
+		<Metadata name="Catalog.ро_Оборудование.Form.ФормаГруппы.Form" id="0c216cbd-5bbe-4707-8dad-178c3fc49e77.0" configVersion="63c5235ae21c6e47b287c5b83a34157c00000000"/>
 		<Metadata name="Catalog.ро_Оборудование.Form.ФормаСписка" id="3bbc745c-dd37-464c-bbef-3c0dd646668e" configVersion="5b998ef0bdfc384d877b8d3b023a83b300000000"/>
 		<Metadata name="Catalog.ро_Оборудование.Form.ФормаСписка.Form" id="3bbc745c-dd37-464c-bbef-3c0dd646668e.0" configVersion="22eb59cd43e63241b00e143669245be100000000"/>
 		<Metadata name="Catalog.ро_Оборудование.Form.ФормаЭлемента" id="7dd9f3d7-3e29-4f93-8938-92480362d67f" configVersion="8f8e90d709879e42a5613ff2c70092ed00000000"/>
@@ -258,8 +260,8 @@
 		<Metadata name="CommonForm.ФормаПодбораЗаказНарядов.Form" id="c7a75ea8-fa84-470d-9afa-4a342cf1590c.0" configVersion="c73398740f20854eaa2b8f8d4ec0a95000000000"/>
 		<Metadata name="CommonModule.ОбщийКлиент" id="32bcb434-0005-48ac-86b5-8ffb4b957762" configVersion="0ca60c7a7660c94588acd481c5c2ece800000000"/>
 		<Metadata name="CommonModule.ОбщийКлиент.Module" id="32bcb434-0005-48ac-86b5-8ffb4b957762.0" configVersion="1e555dd582780b4db6131c8d3911bf0e00000000"/>
-		<Metadata name="CommonModule.глСервер" id="7a084dea-b18d-462e-996f-aa310aece448" configVersion="e6a4c831fe78f145aadb57b08fbcc34b00000000"/>
-		<Metadata name="CommonModule.глСервер.Module" id="7a084dea-b18d-462e-996f-aa310aece448.0" configVersion="a4edc9f40bc3aa4daabd252bb2ca0b4200000000"/>
+		<Metadata name="CommonModule.глСервер" id="7a084dea-b18d-462e-996f-aa310aece448" configVersion="f291c92db0f765498a4f0f65b0e948f800000000"/>
+		<Metadata name="CommonModule.глСервер.Module" id="7a084dea-b18d-462e-996f-aa310aece448.0" configVersion="248fb39109d3024a84767a1b2045bcc100000000"/>
 		<Metadata name="CommonPicture.ро_ЗаказНарядыКартинка" id="9b9e958f-797a-446f-a235-06415eb302b8" configVersion="d9a94f982907fb48a253f4a878cdbe9100000000"/>
 		<Metadata name="CommonPicture.ро_ЗаказНарядыКартинка.Picture" id="9b9e958f-797a-446f-a235-06415eb302b8.0" configVersion="243dae133e94a84a96b5a31f539467a400000000"/>
 		<Metadata name="CommonTemplate.КомпонентаПечатиQRКода" id="88e6facd-43bd-4af6-a64d-35d9864c319d" configVersion="db60a5e9c8220640bc01003068f195fe00000000"/>
@@ -410,8 +412,8 @@
 		<Metadata name="Document.ро_Реестры.ObjectModule" id="fea1f171-f19c-4ada-9142-1d16a84a604a.0" configVersion="b2bda21dc9a2c842a0ca63c212363fc100000000"/>
 		<Metadata name="Document.ро_Реестры.Template.Реестр" id="0aa5039c-6fba-4a15-90e8-bebd9e2951a5" configVersion="c1120111428051488c654ea1dfd520c600000000"/>
 		<Metadata name="Document.ро_Реестры.Template.Реестр.Template" id="0aa5039c-6fba-4a15-90e8-bebd9e2951a5.0" configVersion="8c8487d9b3b5b24ba4a8ce0fdd6f97c300000000"/>
-		<Metadata name="Document.ро_Реестры.Template.РеестрСвод" id="5968e531-e959-46d6-83cf-91350f7ca344" configVersion="3b8119dd8b25f74386996807a614073900000000"/>
-		<Metadata name="Document.ро_Реестры.Template.РеестрСвод.Template" id="5968e531-e959-46d6-83cf-91350f7ca344.0" configVersion="010422c117d07947bfd53051fb266d9f00000000"/>
+		<Metadata name="Document.ро_Реестры.Template.РеестрСвод" id="5968e531-e959-46d6-83cf-91350f7ca344" configVersion="0bf0c93bd82d3444b1dae767a3dca56b00000000"/>
+		<Metadata name="Document.ро_Реестры.Template.РеестрСвод.Template" id="5968e531-e959-46d6-83cf-91350f7ca344.0" configVersion="f58d39b476677944b28df07cc118dd3d00000000"/>
 		<Metadata name="Document.роЗаказНаряд" id="598e1d6e-ef2b-4b57-85a0-9025502f786e" configVersion="a632584c92dc8c498b0c997eb0aaba3f00000000">
 			<Metadata name="Document.роЗаказНаряд.TabularSection.Дефектовка.Attribute.Покупка" id="02faa97e-a4ec-41cc-9df3-cc7e731e85a0"/>
 			<Metadata name="Document.роЗаказНаряд.Attribute.ДатаИзготовления" id="04d6695b-a70b-44dc-bf75-7a9b1fb7edd5"/>
