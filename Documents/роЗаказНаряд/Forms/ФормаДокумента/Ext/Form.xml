@@ -998,6 +998,86 @@
 						</Table>
 					</ChildItems>
 				</Page>
+				<Page name="стрДокументы" id="300">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Стр документы</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Стр документы</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="стрДокументыРасширеннаяПодсказка" id="301"/>
+					<ChildItems>
+						<Table name="тблДокументы" id="302">
+							<Representation>List</Representation>
+							<ReadOnly>true</ReadOnly>
+							<ChangeRowSet>false</ChangeRowSet>
+							<ChangeRowOrder>false</ChangeRowOrder>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>тблДокументы</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Документы</v8:content>
+								</v8:item>
+							</Title>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="тблДокументыКонтекстноеМеню" id="303"/>
+							<AutoCommandBar name="тблДокументыКоманднаяПанель" id="304">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="тблДокументыРасширеннаяПодсказка" id="305"/>
+							<SearchStringAddition name="тблДокументыСтрокаПоиска" id="306">
+								<AdditionSource>
+									<Item>тблДокументы</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="тблДокументыСтрокаПоискаКонтекстноеМеню" id="307"/>
+								<ExtendedTooltip name="тблДокументыСтрокаПоискаРасширеннаяПодсказка" id="308"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="тблДокументыСостояниеПросмотра" id="309">
+								<AdditionSource>
+									<Item>тблДокументы</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="тблДокументыСостояниеПросмотраКонтекстноеМеню" id="310"/>
+								<ExtendedTooltip name="тблДокументыСостояниеПросмотраРасширеннаяПодсказка" id="311"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="тблДокументыУправлениеПоиском" id="312">
+								<AdditionSource>
+									<Item>тблДокументы</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="тблДокументыУправлениеПоискомКонтекстноеМеню" id="313"/>
+								<ExtendedTooltip name="тблДокументыУправлениеПоискомРасширеннаяПодсказка" id="314"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">тблДокументыВыбор</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="тблДокументыДата" id="315">
+									<DataPath>тблДокументы.Период</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="тблДокументыДатаКонтекстноеМеню" id="316"/>
+									<ExtendedTooltip name="тблДокументыДатаРасширеннаяПодсказка" id="317"/>
+								</InputField>
+								<InputField name="тблДокументыДокумент" id="318">
+									<DataPath>тблДокументы.Регистратор</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="тблДокументыДокументКонтекстноеМеню" id="319"/>
+									<ExtendedTooltip name="тблДокументыДокументРасширеннаяПодсказка" id="320"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
 			</ChildItems>
 		</Pages>
 	</ChildItems>
@@ -1063,6 +1143,44 @@
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
 			</Type>
+		</Attribute>
+		<Attribute name="тблДокументы" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тбл документы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Период" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="Регистратор" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Документ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:TypeSet>cfg:DocumentRef</v8:TypeSet>
+					</Type>
+				</Column>
+			</Columns>
 		</Attribute>
 	</Attributes>
 	<Commands>
