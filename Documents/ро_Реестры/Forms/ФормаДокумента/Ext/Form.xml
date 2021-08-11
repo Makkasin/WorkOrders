@@ -41,6 +41,12 @@
 				<Font bold="true" kind="AutoFont"/>
 				<ExtendedTooltip name="ФормаПечатьСводРасширеннаяПодсказка" id="62"/>
 			</Button>
+			<Button name="ФормаПечатьДефектовки" id="150">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ПечатьДефектовки</CommandName>
+				<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+				<ExtendedTooltip name="ФормаПечатьДефектовкиРасширеннаяПодсказка" id="151"/>
+			</Button>
 			<Button name="ФормаВыгрузитьВБухгалтерию" id="96">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.ВыгрузитьВБухгалтерию</CommandName>
@@ -400,6 +406,12 @@
 										<Event name="OnChange">ЗаказНарядыЗаказНарядПриИзменении</Event>
 									</Events>
 								</InputField>
+								<InputField name="ЗаказНарядыМеталлолом" id="152">
+									<DataPath>Объект.ЗаказНаряды.Металлолом</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ЗаказНарядыМеталлоломКонтекстноеМеню" id="153"/>
+									<ExtendedTooltip name="ЗаказНарядыМеталлоломРасширеннаяПодсказка" id="154"/>
+								</InputField>
 								<InputField name="ЗаказНарядыОписаниеПараметров" id="100">
 									<DataPath>Объект.ЗаказНаряды.ОписаниеПараметров</DataPath>
 									<EditMode>EnterOnInput</EditMode>
@@ -483,6 +495,17 @@
 								</InputField>
 							</ChildItems>
 						</UsualGroup>
+						<InputField name="БухРеализация1" id="147">
+							<DataPath>Объект.БухРеализация</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Счет-фактура</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="БухРеализация1КонтекстноеМеню" id="148"/>
+							<ExtendedTooltip name="БухРеализация1РасширеннаяПодсказка" id="149"/>
+						</InputField>
 					</ChildItems>
 				</Page>
 			</ChildItems>
@@ -713,6 +736,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ПечатьСФ</Action>
+		</Command>
+		<Command name="ПечатьДефектовки" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дефектовки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать дефектовки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПечатьДефектовки</Action>
 		</Command>
 	</Commands>
 </Form>
