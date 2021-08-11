@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Акт за месяц</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<CommandBarLocation>None</CommandBarLocation>
+	<ReportFormType>Main</ReportFormType>
+	<AutoShowState>Auto</AutoShowState>
+	<ReportResultViewMode>Auto</ReportResultViewMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="5">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="6"/>
+			<ChildItems>
+				<Button name="ПриходныйАкт" id="3">
+					<Type>UsualButton</Type>
+					<Height>2</Height>
+					<CommandName>Form.Command.ПриходныйАкт</CommandName>
+					<BackColor>web:AntiqueWhite</BackColor>
+					<Font bold="true" kind="AutoFont"/>
+					<ExtendedTooltip name="ПриходныйАктРасширеннаяПодсказка" id="4"/>
+				</Button>
+				<Button name="РасходныйАкт" id="1">
+					<Type>UsualButton</Type>
+					<Height>2</Height>
+					<CommandName>Form.Command.РасходныйАкт</CommandName>
+					<BackColor>web:AntiqueWhite</BackColor>
+					<Font bold="true" kind="AutoFont"/>
+					<ExtendedTooltip name="РасходныйАктРасширеннаяПодсказка" id="2"/>
+				</Button>
+				<InputField name="Дата1" id="7">
+					<DataPath>Отчет.Дата1</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>За период с</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="Дата1КонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="Дата1РасширеннаяПодсказка" id="9"/>
+				</InputField>
+				<InputField name="Дата2" id="10">
+					<DataPath>Отчет.Дата2</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>по</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="Дата2КонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="Дата2РасширеннаяПодсказка" id="12"/>
+				</InputField>
+				<Button name="ВыбратьПериод" id="44">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ВыбратьПериод</CommandName>
+					<ExtendedTooltip name="ВыбратьПериодРасширеннаяПодсказка" id="45"/>
+				</Button>
+				<InputField name="КонтрагентРеестр" id="22">
+					<DataPath>Отчет.КонтрагентРеестр</DataPath>
+					<Font bold="true" kind="AutoFont"/>
+					<ContextMenu name="КонтрагентРеестрКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="КонтрагентРеестрРасширеннаяПодсказка" id="24"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="Группа3" id="27">
+			<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="28"/>
+			<ChildItems>
+				<Page name="Контрагенты" id="29">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Контрагенты</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Контрагенты</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="КонтрагентыРасширеннаяПодсказка" id="30"/>
+					<ChildItems>
+						<UsualGroup name="Группа2" id="25">
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="26"/>
+							<ChildItems>
+								<InputField name="Организация" id="19">
+									<DataPath>Отчет.Организация</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Отправитель</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ОрганизацияКонтекстноеМеню" id="20"/>
+									<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="21"/>
+								</InputField>
+								<InputField name="Контрагент" id="16">
+									<DataPath>Отчет.Контрагент</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Получатель</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="КонтрагентКонтекстноеМеню" id="17"/>
+									<ExtendedTooltip name="КонтрагентРасширеннаяПодсказка" id="18"/>
+									<Events>
+										<Event name="OnChange">КонтрагентПриИзменении</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="Группа4" id="31">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подписанты</v8:content>
+						</v8:item>
+					</Title>
+					<Group>AlwaysHorizontal</Group>
+					<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="32"/>
+					<ChildItems>
+						<InputField name="Ответственный" id="33">
+							<DataPath>Отчет.Ответственный</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ФИО отправитель</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ОтветственныйКонтекстноеМеню" id="34"/>
+							<ExtendedTooltip name="ОтветственныйРасширеннаяПодсказка" id="35"/>
+						</InputField>
+						<UsualGroup name="Группа5" id="36">
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="37"/>
+							<ChildItems>
+								<InputField name="ПодписантДолжность" id="41">
+									<DataPath>Отчет.ПодписантДолжность</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Должность получатель</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ПодписантДолжностьКонтекстноеМеню" id="42"/>
+									<ExtendedTooltip name="ПодписантДолжностьРасширеннаяПодсказка" id="43"/>
+								</InputField>
+								<InputField name="Подписант" id="38">
+									<DataPath>Отчет.Подписант</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>ФИО получатель</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ПодписантКонтекстноеМеню" id="39"/>
+									<ExtendedTooltip name="ПодписантРасширеннаяПодсказка" id="40"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+		<SpreadSheetDocumentField name="Результат" id="13">
+			<DataPath>Результат</DataPath>
+			<TitleLocation>None</TitleLocation>
+			<ContextMenu name="РезультатКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="РезультатРасширеннаяПодсказка" id="15"/>
+		</SpreadSheetDocumentField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Отчет" id="1">
+			<Type>
+				<v8:Type>cfg:ReportObject.АктЗаМесяц</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="Результат" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Результат</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet">mxl:SpreadsheetDocument</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="РасходныйАкт" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расходный акт</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расходный акт</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>РасходныйАкт</Action>
+		</Command>
+		<Command name="ПриходныйАкт" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Приходный акт</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Приходный акт</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>РасходныйАкт</Action>
+		</Command>
+		<Command name="ВыбратьПериод" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>...</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать период</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыбратьПериод</Action>
+		</Command>
+	</Commands>
+</Form>

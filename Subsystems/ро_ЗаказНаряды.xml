@@ -24,6 +24,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ро_Отгрузка</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ПечатныеФормы</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ро_ПриходОборудования</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.АктЗаМесяц</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

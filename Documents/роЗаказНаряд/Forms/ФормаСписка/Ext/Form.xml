@@ -59,6 +59,12 @@
 				<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
 				<ExtendedTooltip name="ФормаСправочникОборудованиеРасширеннаяПодсказка" id="80"/>
 			</Button>
+			<Button name="ФормаАктЗаМесяц" id="87">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.АктЗаМесяц</CommandName>
+				<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+				<ExtendedTooltip name="ФормаАктЗаМесяцРасширеннаяПодсказка" id="88"/>
+			</Button>
 			<Button name="ФормаОтчет" id="67">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.Отчет</CommandName>
@@ -615,6 +621,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>СправочникПечатныеФормы</Action>
+		</Command>
+		<Command name="АктЗаМесяц" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Акт за месяц</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отчет</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>АктЗаМесяц</Action>
 		</Command>
 	</Commands>
 </Form>

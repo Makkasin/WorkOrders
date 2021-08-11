@@ -190,6 +190,7 @@
 			<CommonForm>ФормаПечати</CommonForm>
 			<CommonForm>ФормаПодбораЗаказНарядов</CommonForm>
 			<CommonForm>ВыборСтандартногоПериода</CommonForm>
+			<CommonForm>ВыборСтандартногоПериодаМесяц</CommonForm>
 			<Catalog>ро_Оборудование</Catalog>
 			<Catalog>ро_Производители</Catalog>
 			<Catalog>Контрагенты</Catalog>
@@ -218,6 +219,7 @@
 			<Report>БазовыйОтчет</Report>
 			<Report>ОтчетПоЗаказам</Report>
 			<Report>ОтчетПоОборудованиеВРаботе</Report>
+			<Report>АктЗаМесяц</Report>
 			<DataProcessor>КорректировкаДвижений</DataProcessor>
 			<InformationRegister>Прайс</InformationRegister>
 			<InformationRegister>СоответсвиеИдБухгалтерии</InformationRegister>
