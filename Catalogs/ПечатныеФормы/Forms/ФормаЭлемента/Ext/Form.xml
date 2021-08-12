@@ -71,6 +71,11 @@
 			<ContextMenu name="ЛогКонтекстноеМеню" id="38"/>
 			<ExtendedTooltip name="ЛогРасширеннаяПодсказка" id="39"/>
 		</LabelField>
+		<InputField name="ПолеГруппировки" id="107">
+			<DataPath>Объект.ПолеГруппировки</DataPath>
+			<ContextMenu name="ПолеГруппировкиКонтекстноеМеню" id="108"/>
+			<ExtendedTooltip name="ПолеГруппировкиРасширеннаяПодсказка" id="109"/>
+		</InputField>
 		<Pages name="грпСтраницы" id="40">
 			<Title>
 				<v8:item>
