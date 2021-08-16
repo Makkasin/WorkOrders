@@ -223,6 +223,7 @@
 			<DataProcessor>КорректировкаДвижений</DataProcessor>
 			<InformationRegister>Прайс</InformationRegister>
 			<InformationRegister>СоответсвиеИдБухгалтерии</InformationRegister>
+			<InformationRegister>РегистрЦен</InformationRegister>
 			<AccumulationRegister>РаботаРО</AccumulationRegister>
 			<AccumulationRegister>ОстатокРО</AccumulationRegister>
 		</ChildObjects>
