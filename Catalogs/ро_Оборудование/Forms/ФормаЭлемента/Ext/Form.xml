@@ -365,6 +365,9 @@
 					<ExtendedTooltip name="стрПрайсРасширеннаяПодсказка" id="118"/>
 					<ChildItems>
 						<Table name="регЦен" id="119">
+							<ReadOnly>true</ReadOnly>
+							<ChangeRowSet>false</ChangeRowSet>
+							<ChangeRowOrder>false</ChangeRowOrder>
 							<UseAlternationRowColor>true</UseAlternationRowColor>
 							<EnableStartDrag>true</EnableStartDrag>
 							<DataPath>регЦен</DataPath>

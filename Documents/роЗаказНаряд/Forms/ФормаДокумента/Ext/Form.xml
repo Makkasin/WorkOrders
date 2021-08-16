@@ -998,6 +998,87 @@
 						</Table>
 					</ChildItems>
 				</Page>
+				<Page name="стрРаботы" id="321">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выполненные работы</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Стр работы</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="стрРаботыРасширеннаяПодсказка" id="322"/>
+					<ChildItems>
+						<Table name="Работы" id="323">
+							<ChangeRowSet>false</ChangeRowSet>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.Работы</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="РаботыКонтекстноеМеню" id="324"/>
+							<AutoCommandBar name="РаботыКоманднаяПанель" id="325">
+								<ChildItems>
+									<Button name="РаботыОбновитьРаботы" id="345">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ОбновитьРаботы</CommandName>
+										<ExtendedTooltip name="РаботыОбновитьРаботыРасширеннаяПодсказка" id="346"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="РаботыРасширеннаяПодсказка" id="326"/>
+							<SearchStringAddition name="РаботыСтрокаПоиска" id="327">
+								<AdditionSource>
+									<Item>Работы</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="РаботыСтрокаПоискаКонтекстноеМеню" id="328"/>
+								<ExtendedTooltip name="РаботыСтрокаПоискаРасширеннаяПодсказка" id="329"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="РаботыСостояниеПросмотра" id="330">
+								<AdditionSource>
+									<Item>Работы</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="РаботыСостояниеПросмотраКонтекстноеМеню" id="331"/>
+								<ExtendedTooltip name="РаботыСостояниеПросмотраРасширеннаяПодсказка" id="332"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="РаботыУправлениеПоиском" id="333">
+								<AdditionSource>
+									<Item>Работы</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="РаботыУправлениеПоискомКонтекстноеМеню" id="334"/>
+								<ExtendedTooltip name="РаботыУправлениеПоискомРасширеннаяПодсказка" id="335"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="РаботыНомерСтроки" id="336">
+									<DataPath>Объект.Работы.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="РаботыНомерСтрокиКонтекстноеМеню" id="337"/>
+									<ExtendedTooltip name="РаботыНомерСтрокиРасширеннаяПодсказка" id="338"/>
+								</LabelField>
+								<CheckBoxField name="РаботыВыполнено" id="342">
+									<DataPath>Объект.Работы.Выполнено</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="РаботыВыполненоКонтекстноеМеню" id="343"/>
+									<ExtendedTooltip name="РаботыВыполненоРасширеннаяПодсказка" id="344"/>
+								</CheckBoxField>
+								<InputField name="РаботыРабота" id="339">
+									<DataPath>Объект.Работы.Работа</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="РаботыРаботаКонтекстноеМеню" id="340"/>
+									<ExtendedTooltip name="РаботыРаботаРасширеннаяПодсказка" id="341"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
 				<Page name="стрДокументы" id="300">
 					<Title>
 						<v8:item>
@@ -1259,6 +1340,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ПечатьДефектовка</Action>
+		</Command>
+		<Command name="ОбновитьРаботы" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить работы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить работы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновитьРаботы</Action>
 		</Command>
 	</Commands>
 </Form>

@@ -181,6 +181,7 @@
 			<CommonPicture>ро_ЗаказНарядыКартинка</CommonPicture>
 			<SessionParameter>ТекущийПользователь</SessionParameter>
 			<Role>ро_ОсновнаяРоль</Role>
+			<Role>изменятьЦены</Role>
 			<CommonTemplate>КомпонентаПечатиQRКода</CommonTemplate>
 			<CommonModule>ОбщийКлиент</CommonModule>
 			<CommonModule>глСервер</CommonModule>
@@ -211,6 +212,8 @@
 			<Catalog>ро_Пружины</Catalog>
 			<Catalog>ТС</Catalog>
 			<Catalog>ФильтрыОтбораДляРеестра</Catalog>
+			<Catalog>ро_Работы</Catalog>
+			<Catalog>ро_РаботыПоПрайсу</Catalog>
 			<Document>роЗаказНаряд</Document>
 			<Document>ро_Отгрузка</Document>
 			<Document>ро_ПриходОборудования</Document>
