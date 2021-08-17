@@ -129,6 +129,22 @@
 					<ContextMenu name="ФизЛицоКонтекстноеМеню" id="101"/>
 					<ExtendedTooltip name="ФизЛицоРасширеннаяПодсказка" id="102"/>
 				</InputField>
+				<Button name="НовыйПрайс" id="117">
+					<Type>UsualButton</Type>
+					<Representation>PictureAndText</Representation>
+					<CommandName>Form.Command.НовыйПрайс</CommandName>
+					<Picture>
+						<xr:Ref>StdPicture.AccumulationRegister</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Регистр цен</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="НовыйПрайсРасширеннаяПодсказка" id="118"/>
+				</Button>
 			</ChildItems>
 		</UsualGroup>
 		<UsualGroup name="грпНастройка" id="8">
@@ -564,6 +580,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>кнПериод</Action>
+		</Command>
+		<Command name="НовыйПрайс" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Новый прайс</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Новый прайс</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НоывйПрайс</Action>
 		</Command>
 	</Commands>
 </Form>

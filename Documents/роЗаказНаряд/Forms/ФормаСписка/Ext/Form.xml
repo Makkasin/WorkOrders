@@ -44,6 +44,7 @@
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.ОтчетОборудованиеВРаботе</CommandName>
 				<BackColor>web:Wheat</BackColor>
+				<Font bold="true" kind="AutoFont"/>
 				<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
 				<ExtendedTooltip name="ФормаОтчетОборудованиеВРаботеРасширеннаяПодсказка" id="84"/>
 			</Button>

@@ -127,7 +127,7 @@
 					<ExtendedTooltip name="Группа16РасширеннаяПодсказка" id="281"/>
 					<ChildItems>
 						<CheckBoxField name="ВключитьВРеестр" id="282">
-							<DataPath>Объект.ВключитьВРеестр</DataPath>
+							<DataPath>1/0:1eb9fe93-fe8e-4802-98e6-9b9658c5828c</DataPath>
 							<CheckBoxType>Switcher</CheckBoxType>
 							<ContextMenu name="ВключитьВРеестрКонтекстноеМеню" id="283"/>
 							<ExtendedTooltip name="ВключитьВРеестрРасширеннаяПодсказка" id="284"/>
@@ -170,6 +170,16 @@
 					<ContextMenu name="ОборудованиеДавлениеКонтекстноеМеню" id="213"/>
 					<ExtendedTooltip name="ОборудованиеДавлениеРасширеннаяПодсказка" id="214"/>
 				</LabelField>
+				<Button name="ОбновитьЦену" id="356">
+					<Type>UsualButton</Type>
+					<Representation>Picture</Representation>
+					<CommandName>Form.Command.ОбновитьЦену</CommandName>
+					<Picture>
+						<xr:Ref>StdPicture.Refresh</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ExtendedTooltip name="ОбновитьЦенуРасширеннаяПодсказка" id="357"/>
+				</Button>
 				<LabelField name="ЦенаСтрока" id="218">
 					<DataPath>ЦенаСтрока</DataPath>
 					<HorizontalAlign>Left</HorizontalAlign>
@@ -1062,18 +1072,36 @@
 									<ContextMenu name="РаботыНомерСтрокиКонтекстноеМеню" id="337"/>
 									<ExtendedTooltip name="РаботыНомерСтрокиРасширеннаяПодсказка" id="338"/>
 								</LabelField>
-								<CheckBoxField name="РаботыВыполнено" id="342">
+								<CheckBoxField name="РаботыВыполнено" id="353">
 									<DataPath>Объект.Работы.Выполнено</DataPath>
 									<EditMode>EnterOnInput</EditMode>
 									<CheckBoxType>Auto</CheckBoxType>
-									<ContextMenu name="РаботыВыполненоКонтекстноеМеню" id="343"/>
-									<ExtendedTooltip name="РаботыВыполненоРасширеннаяПодсказка" id="344"/>
+									<ContextMenu name="РаботыВыполненоКонтекстноеМеню" id="354"/>
+									<ExtendedTooltip name="РаботыВыполненоРасширеннаяПодсказка" id="355"/>
+									<Events>
+										<Event name="OnChange">РаботыВыполненоПриИзменении</Event>
+									</Events>
 								</CheckBoxField>
 								<InputField name="РаботыРабота" id="339">
 									<DataPath>Объект.Работы.Работа</DataPath>
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="РаботыРаботаКонтекстноеМеню" id="340"/>
 									<ExtendedTooltip name="РаботыРаботаРасширеннаяПодсказка" id="341"/>
+								</InputField>
+								<InputField name="РаботыКоличество" id="347">
+									<DataPath>Объект.Работы.Количество</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="РаботыКоличествоКонтекстноеМеню" id="348"/>
+									<ExtendedTooltip name="РаботыКоличествоРасширеннаяПодсказка" id="349"/>
+									<Events>
+										<Event name="OnChange">ПересчитатьЦенуРаботы</Event>
+									</Events>
+								</InputField>
+								<InputField name="РаботыЦена" id="350">
+									<DataPath>Объект.Работы.Цена</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<ContextMenu name="РаботыЦенаКонтекстноеМеню" id="351"/>
+									<ExtendedTooltip name="РаботыЦенаРасширеннаяПодсказка" id="352"/>
 								</InputField>
 							</ChildItems>
 						</Table>
@@ -1172,6 +1200,37 @@
 			<UseAlways>
 				<Field>Объект.RegisterRecords</Field>
 			</UseAlways>
+			<Columns>
+				<AdditionalColumns table="Объект.Работы">
+					<Column name="Цена" id="1">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Цена</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:decimal</v8:Type>
+							<v8:NumberQualifiers>
+								<v8:Digits>10</v8:Digits>
+								<v8:FractionDigits>2</v8:FractionDigits>
+								<v8:AllowedSign>Any</v8:AllowedSign>
+							</v8:NumberQualifiers>
+						</Type>
+					</Column>
+					<Column name="Выполнено" id="2">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Выполнено</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+					</Column>
+				</AdditionalColumns>
+			</Columns>
 		</Attribute>
 		<Attribute name="НадписьТипОбр" id="2">
 			<Title>
@@ -1355,6 +1414,22 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ОбновитьРаботы</Action>
+			<ModifiesSavedData>true</ModifiesSavedData>
+		</Command>
+		<Command name="ОбновитьЦену" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить цену</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить цену</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновитьЦену</Action>
 		</Command>
 	</Commands>
 </Form>
