@@ -41,6 +41,13 @@
 				<Font bold="true" kind="AutoFont"/>
 				<ExtendedTooltip name="ФормаПечатьСводРасширеннаяПодсказка" id="62"/>
 			</Button>
+			<Button name="ФормаПечатьРеестрРабот" id="190">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ПечатьРеестрРабот</CommandName>
+				<BackColor>#CCFFCC</BackColor>
+				<Font bold="true" kind="AutoFont"/>
+				<ExtendedTooltip name="ФормаПечатьРеестрРаботРасширеннаяПодсказка" id="191"/>
+			</Button>
 			<Button name="ФормаПечатьДефектовки" id="150">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.ПечатьДефектовки</CommandName>
@@ -508,6 +515,98 @@
 						</InputField>
 					</ChildItems>
 				</Page>
+				<Page name="стрРаботы" id="155">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Работы</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Стр работы</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="стрРаботыРасширеннаяПодсказка" id="156"/>
+					<ChildItems>
+						<Table name="Работы" id="157">
+							<ReadOnly>true</ReadOnly>
+							<ChangeRowSet>false</ChangeRowSet>
+							<ChangeRowOrder>false</ChangeRowOrder>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.Работы</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="РаботыКонтекстноеМеню" id="158"/>
+							<AutoCommandBar name="РаботыКоманднаяПанель" id="159"/>
+							<ExtendedTooltip name="РаботыРасширеннаяПодсказка" id="160"/>
+							<SearchStringAddition name="РаботыСтрокаПоиска" id="161">
+								<AdditionSource>
+									<Item>Работы</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="РаботыСтрокаПоискаКонтекстноеМеню" id="162"/>
+								<ExtendedTooltip name="РаботыСтрокаПоискаРасширеннаяПодсказка" id="163"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="РаботыСостояниеПросмотра" id="164">
+								<AdditionSource>
+									<Item>Работы</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="РаботыСостояниеПросмотраКонтекстноеМеню" id="165"/>
+								<ExtendedTooltip name="РаботыСостояниеПросмотраРасширеннаяПодсказка" id="166"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="РаботыУправлениеПоиском" id="167">
+								<AdditionSource>
+									<Item>Работы</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="РаботыУправлениеПоискомКонтекстноеМеню" id="168"/>
+								<ExtendedTooltip name="РаботыУправлениеПоискомРасширеннаяПодсказка" id="169"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="РаботыНомерСтроки" id="170">
+									<DataPath>Объект.Работы.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="РаботыНомерСтрокиКонтекстноеМеню" id="171"/>
+									<ExtendedTooltip name="РаботыНомерСтрокиРасширеннаяПодсказка" id="172"/>
+								</LabelField>
+								<InputField name="РаботыЗаказНаряд" id="173">
+									<DataPath>Объект.Работы.ЗаказНаряд</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="РаботыЗаказНарядКонтекстноеМеню" id="174"/>
+									<ExtendedTooltip name="РаботыЗаказНарядРасширеннаяПодсказка" id="175"/>
+								</InputField>
+								<InputField name="РаботыРаботаПоПрайсу" id="176">
+									<DataPath>Объект.Работы.РаботаПоПрайсу</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="РаботыРаботаПоПрайсуКонтекстноеМеню" id="177"/>
+									<ExtendedTooltip name="РаботыРаботаПоПрайсуРасширеннаяПодсказка" id="178"/>
+								</InputField>
+								<InputField name="РаботыРабота" id="179">
+									<DataPath>Объект.Работы.Работа</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="РаботыРаботаКонтекстноеМеню" id="180"/>
+									<ExtendedTooltip name="РаботыРаботаРасширеннаяПодсказка" id="181"/>
+								</InputField>
+								<InputField name="РаботыКоличество" id="182">
+									<DataPath>Объект.Работы.Количество</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="РаботыКоличествоКонтекстноеМеню" id="183"/>
+									<ExtendedTooltip name="РаботыКоличествоРасширеннаяПодсказка" id="184"/>
+								</InputField>
+								<InputField name="РаботыЦена" id="185">
+									<DataPath>Объект.Работы.Цена</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="РаботыЦенаКонтекстноеМеню" id="186"/>
+									<ExtendedTooltip name="РаботыЦенаРасширеннаяПодсказка" id="187"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
 			</ChildItems>
 		</Pages>
 		<InputField name="Комментарий" id="103">
@@ -751,6 +850,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ПечатьДефектовки</Action>
+		</Command>
+		<Command name="ПечатьРеестрРабот" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Реестр работ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать реестр работ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПечатьРеестрРабот</Action>
 		</Command>
 	</Commands>
 </Form>

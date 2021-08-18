@@ -1065,6 +1065,10 @@
 								<ContextMenu name="РаботыУправлениеПоискомКонтекстноеМеню" id="334"/>
 								<ExtendedTooltip name="РаботыУправлениеПоискомРасширеннаяПодсказка" id="335"/>
 							</SearchControlAddition>
+							<Events>
+								<Event name="OnEditEnd">РаботыПриОкончанииРедактирования</Event>
+								<Event name="BeforeEditEnd">РаботыПередОкончаниемРедактирования</Event>
+							</Events>
 							<ChildItems>
 								<LabelField name="РаботыНомерСтроки" id="336">
 									<DataPath>Объект.Работы.LineNumber</DataPath>

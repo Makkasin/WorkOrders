@@ -412,6 +412,9 @@
 								<ContextMenu name="регЦенУправлениеПоискомКонтекстноеМеню" id="130"/>
 								<ExtendedTooltip name="регЦенУправлениеПоискомРасширеннаяПодсказка" id="131"/>
 							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">регЦенВыбор</Event>
+							</Events>
 							<ChildItems>
 								<LabelField name="регЦенКонтрагент" id="132">
 									<DataPath>регЦен.Контрагент</DataPath>
@@ -427,6 +430,11 @@
 									<DataPath>регЦен.Цена</DataPath>
 									<ContextMenu name="регЦенЦенаКонтекстноеМеню" id="139"/>
 									<ExtendedTooltip name="регЦенЦенаРасширеннаяПодсказка" id="140"/>
+								</LabelField>
+								<LabelField name="регЦенРабота" id="141">
+									<DataPath>регЦен.Работа</DataPath>
+									<ContextMenu name="регЦенРаботаКонтекстноеМеню" id="142"/>
+									<ExtendedTooltip name="регЦенРаботаРасширеннаяПодсказка" id="143"/>
 								</LabelField>
 							</ChildItems>
 						</Table>
