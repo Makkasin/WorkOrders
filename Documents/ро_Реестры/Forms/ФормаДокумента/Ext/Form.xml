@@ -421,6 +421,7 @@
 								</InputField>
 								<InputField name="ЗаказНарядыОписаниеПараметров" id="100">
 									<DataPath>Объект.ЗаказНаряды.ОписаниеПараметров</DataPath>
+									<ReadOnly>true</ReadOnly>
 									<EditMode>EnterOnInput</EditMode>
 									<Width>1</Width>
 									<AutoMaxWidth>false</AutoMaxWidth>

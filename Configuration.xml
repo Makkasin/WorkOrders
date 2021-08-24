@@ -214,6 +214,7 @@
 			<Catalog>ФильтрыОтбораДляРеестра</Catalog>
 			<Catalog>ро_Работы</Catalog>
 			<Catalog>ро_РаботыПоПрайсу</Catalog>
+			<Catalog>ро_ОписаниеПараметров</Catalog>
 			<Document>роЗаказНаряд</Document>
 			<Document>ро_Отгрузка</Document>
 			<Document>ро_ПриходОборудования</Document>
