@@ -225,7 +225,7 @@
 					</dcscor:item>
 					<dcscor:item>
 						<dcscor:parameter>Шрифт</dcscor:parameter>
-						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" height="9" kind="WindowsFont"/>
+						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" height="8" kind="WindowsFont"/>
 					</dcscor:item>
 				</appearance>
 			</item>
@@ -444,7 +444,7 @@
 					</dcscor:item>
 					<dcscor:item>
 						<dcscor:parameter>Шрифт</dcscor:parameter>
-						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" height="9" bold="false" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" height="8" bold="false" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
 					</dcscor:item>
 				</appearance>
 			</item>
@@ -468,7 +468,7 @@
 					</dcscor:item>
 					<dcscor:item>
 						<dcscor:parameter>Шрифт</dcscor:parameter>
-						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" height="14" bold="false" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
 					</dcscor:item>
 				</appearance>
 			</item>
@@ -486,7 +486,7 @@
 					</dcscor:item>
 					<dcscor:item>
 						<dcscor:parameter>Шрифт</dcscor:parameter>
-						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" height="12" kind="WindowsFont"/>
+						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" height="9" kind="WindowsFont"/>
 					</dcscor:item>
 				</appearance>
 			</item>
@@ -504,7 +504,7 @@
 					</dcscor:item>
 					<dcscor:item>
 						<dcscor:parameter>Шрифт</dcscor:parameter>
-						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" height="10" bold="false" italic="true" underline="false" strikeout="false" kind="WindowsFont"/>
+						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" height="8" bold="false" italic="true" underline="false" strikeout="false" kind="WindowsFont"/>
 					</dcscor:item>
 				</appearance>
 			</item>
@@ -532,7 +532,7 @@
 					</dcscor:item>
 					<dcscor:item>
 						<dcscor:parameter>Шрифт</dcscor:parameter>
-						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" height="14" kind="WindowsFont"/>
+						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
 					</dcscor:item>
 				</appearance>
 			</item>
@@ -545,7 +545,7 @@
 					</dcscor:item>
 					<dcscor:item>
 						<dcscor:parameter>Шрифт</dcscor:parameter>
-						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" height="12" kind="WindowsFont"/>
+						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" height="9" kind="WindowsFont"/>
 					</dcscor:item>
 				</appearance>
 			</item>
@@ -558,7 +558,7 @@
 					</dcscor:item>
 					<dcscor:item>
 						<dcscor:parameter>Шрифт</dcscor:parameter>
-						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" height="10" bold="false" italic="true" underline="false" strikeout="false" kind="WindowsFont"/>
+						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" height="8" bold="false" italic="true" underline="false" strikeout="false" kind="WindowsFont"/>
 					</dcscor:item>
 				</appearance>
 			</item>
@@ -586,7 +586,7 @@
 					</dcscor:item>
 					<dcscor:item>
 						<dcscor:parameter>Шрифт</dcscor:parameter>
-						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" height="14" bold="false" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
 					</dcscor:item>
 				</appearance>
 			</item>
@@ -599,7 +599,7 @@
 					</dcscor:item>
 					<dcscor:item>
 						<dcscor:parameter>Шрифт</dcscor:parameter>
-						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" height="12" kind="WindowsFont"/>
+						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" height="9" kind="WindowsFont"/>
 					</dcscor:item>
 				</appearance>
 			</item>
@@ -612,7 +612,7 @@
 					</dcscor:item>
 					<dcscor:item>
 						<dcscor:parameter>Шрифт</dcscor:parameter>
-						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" height="10" bold="false" italic="true" underline="false" strikeout="false" kind="WindowsFont"/>
+						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" height="8" bold="false" italic="true" underline="false" strikeout="false" kind="WindowsFont"/>
 					</dcscor:item>
 				</appearance>
 			</item>
@@ -648,7 +648,7 @@
 					</dcscor:item>
 					<dcscor:item>
 						<dcscor:parameter>Шрифт</dcscor:parameter>
-						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" height="14" kind="WindowsFont"/>
+						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
 					</dcscor:item>
 				</appearance>
 			</item>
@@ -665,7 +665,7 @@
 					</dcscor:item>
 					<dcscor:item>
 						<dcscor:parameter>Шрифт</dcscor:parameter>
-						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" height="12" kind="WindowsFont"/>
+						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" height="9" kind="WindowsFont"/>
 					</dcscor:item>
 				</appearance>
 			</item>
@@ -682,7 +682,7 @@
 					</dcscor:item>
 					<dcscor:item>
 						<dcscor:parameter>Шрифт</dcscor:parameter>
-						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" height="10" bold="false" italic="true" underline="false" strikeout="false" kind="WindowsFont"/>
+						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" height="8" bold="false" italic="true" underline="false" strikeout="false" kind="WindowsFont"/>
 					</dcscor:item>
 				</appearance>
 			</item>
@@ -755,7 +755,7 @@
 					</dcscor:item>
 					<dcscor:item>
 						<dcscor:parameter>Шрифт</dcscor:parameter>
-						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" height="8" kind="WindowsFont"/>
 					</dcscor:item>
 				</appearance>
 			</item>
@@ -765,6 +765,10 @@
 					<dcscor:item>
 						<dcscor:parameter>ЦветФона</dcscor:parameter>
 						<dcscor:value xsi:type="v8ui:Color">web:Gainsboro</dcscor:value>
+					</dcscor:item>
+					<dcscor:item>
+						<dcscor:parameter>Шрифт</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" kind="WindowsFont"/>
 					</dcscor:item>
 				</appearance>
 			</item>
@@ -895,7 +899,7 @@
 					</dcscor:item>
 					<dcscor:item>
 						<dcscor:parameter>Шрифт</dcscor:parameter>
-						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" height="9" bold="false" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" height="8" bold="false" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
 					</dcscor:item>
 				</appearance>
 			</item>
@@ -910,7 +914,7 @@
 				<appearance>
 					<dcscor:item>
 						<dcscor:parameter>Шрифт</dcscor:parameter>
-						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" height="9" kind="WindowsFont"/>
+						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" height="8" kind="WindowsFont"/>
 					</dcscor:item>
 				</appearance>
 			</item>
@@ -926,6 +930,10 @@
 					<dcscor:item>
 						<dcscor:parameter>ЦветГраницы</dcscor:parameter>
 						<dcscor:value xsi:type="v8ui:Color">#000000</dcscor:value>
+					</dcscor:item>
+					<dcscor:item>
+						<dcscor:parameter>Шрифт</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" height="8" kind="WindowsFont"/>
 					</dcscor:item>
 				</appearance>
 			</item>
@@ -1031,7 +1039,7 @@
 					</dcscor:item>
 					<dcscor:item>
 						<dcscor:parameter>Шрифт</dcscor:parameter>
-						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" height="9" bold="false" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" height="8" bold="false" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
 					</dcscor:item>
 				</appearance>
 			</item>
@@ -1056,7 +1064,7 @@
 					</dcscor:item>
 					<dcscor:item>
 						<dcscor:parameter>Шрифт</dcscor:parameter>
-						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" height="9" kind="WindowsFont"/>
+						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" height="8" kind="WindowsFont"/>
 					</dcscor:item>
 				</appearance>
 			</item>
@@ -1133,7 +1141,7 @@
 					</dcscor:item>
 					<dcscor:item>
 						<dcscor:parameter>Шрифт</dcscor:parameter>
-						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" height="9" kind="WindowsFont"/>
+						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" height="8" kind="WindowsFont"/>
 					</dcscor:item>
 				</appearance>
 			</item>
@@ -1231,7 +1239,7 @@
 					</dcscor:item>
 					<dcscor:item>
 						<dcscor:parameter>Шрифт</dcscor:parameter>
-						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" height="9" kind="WindowsFont"/>
+						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" height="8" kind="WindowsFont"/>
 					</dcscor:item>
 				</appearance>
 			</item>
@@ -1329,7 +1337,7 @@
 					</dcscor:item>
 					<dcscor:item>
 						<dcscor:parameter>Шрифт</dcscor:parameter>
-						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" height="9" kind="WindowsFont"/>
+						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" height="8" kind="WindowsFont"/>
 					</dcscor:item>
 				</appearance>
 			</item>
@@ -1351,6 +1359,10 @@
 						<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
 							<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
 						</dcscor:value>
+					</dcscor:item>
+					<dcscor:item>
+						<dcscor:parameter>Шрифт</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" height="8" kind="WindowsFont"/>
 					</dcscor:item>
 				</appearance>
 			</item>
@@ -1859,7 +1871,7 @@
 				<appearance>
 					<dcscor:item>
 						<dcscor:parameter>Шрифт</dcscor:parameter>
-						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" height="9" kind="WindowsFont"/>
+						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" height="8" kind="WindowsFont"/>
 					</dcscor:item>
 				</appearance>
 			</item>
@@ -1947,6 +1959,21 @@
 					<dcscor:item>
 						<dcscor:parameter>Шрифт</dcscor:parameter>
 						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					</dcscor:item>
+				</appearance>
+			</item>
+		</dcscor:value>
+	</dcscor:item>
+	<dcscor:item>
+		<dcscor:use>false</dcscor:use>
+		<dcscor:parameter>ПоУмолчанию</dcscor:parameter>
+		<dcscor:value xsi:type="AppearanceTemplateArea">
+			<item>
+				<level>0</level>
+				<appearance>
+					<dcscor:item>
+						<dcscor:parameter>Шрифт</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" kind="WindowsFont"/>
 					</dcscor:item>
 				</appearance>
 			</item>

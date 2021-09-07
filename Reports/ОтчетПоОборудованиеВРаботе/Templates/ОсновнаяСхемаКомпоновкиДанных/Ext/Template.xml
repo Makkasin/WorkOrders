@@ -199,6 +199,10 @@
 			<dataPath>Диаметр</dataPath>
 			<field>Диаметр</field>
 		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Заключение</dataPath>
+			<field>Заключение</field>
+		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>SELECT
 ЗаказНаряд,
@@ -224,7 +228,7 @@ FROM
 	0 Реестр,
 	0 ЦенаРеестра
 ИЗ
-	РегистрНакопления.ОстатокРО.ОстаткиИОбороты(&amp;Дт1,&amp;Дт2) КАК ОстатокРООстаткиИОбороты
+	РегистрНакопления.ОстатокРО.ОстаткиИОбороты(&amp;Дт1,&amp;Дт2,,,ЗаказНаряд.Контрагент = &amp;КА или &amp;КА = неопределено) КАК ОстатокРООстаткиИОбороты
 
 	
 UNION ALL
@@ -240,7 +244,7 @@ UNION ALL
 	0 Реестр,
 	0 ЦенаРеестра
 ИЗ
-	РегистрНакопления.РаботаРО.Остатки(&amp;Дт2) КАК РаботаРООстатки
+	РегистрНакопления.РаботаРО.Остатки(&amp;Дт2,ЗаказНаряд.Контрагент = &amp;КА или &amp;КА = неопределено) КАК РаботаРООстатки
 	
 	
 UNION ALL
@@ -253,13 +257,15 @@ UNION ALL
 	0 КАК КолРасход,
 	0 КАК Работа,
 	РаботаРООстатки.Кол КАК Реестр,
-	Цена ЦенаРеестра
+	РаботаРООстатки.Цена ЦенаРеестра
 ИЗ
 	РегистрНакопления.РаботаРО КАК РаботаРООстатки
+INNER JOIN Документ.роЗаказНаряд Док ON Док.ссылка = РаботаРООстатки.ЗаказНаряд
 ГДЕ
 	РаботаРООстатки.ВидДвижения = Значение(ВидДвиженияНакопления.Расход)
 	and период &gt;= &amp;Дт1
 	and период &lt;= &amp;Дт2
+	and (Док.Контрагент = &amp;КА или &amp;КА = неопределено)
 
 ) WWW
 
@@ -294,6 +300,7 @@ WWW.ЗаказНаряд,
 Док.Номер,
 Док.Контрагент,
 Док.ДатаИспытания,
+Док.Заключение,
 Спр.ссылка Оборудование,
 Спр.ссылка ОборудованиеГрп,
 Спр.родитель Группа,
@@ -307,8 +314,12 @@ WWW.Приход Приход,
 WWW.Расход Расход,
 WWW.Работа Работа,
 WWW.Реестр Реестр,
-CASE WHEN ЗаказВРеестре.ЗаказНаряд IS NULL THEN WWW.КонОст*ISNULL(ЦенаЗН.Цена,ISNULL(Рег.цена,ЦенаРеестра)) ELSE 0 END СумОст,
-WWW.Работа*ISNULL(ЦенаЗН.Цена,ISNULL(Рег.цена,ЦенаРеестра)) СумРабота,
+CASE WHEN ЗаказВРеестре.ЗаказНаряд IS NULL THEN WWW.КонОст*ISNULL(ЦенаЗН.Цена,ISNULL(Рег.цена,ЦенаРеестра)) ELSE 0 END  
+* CASE WHEN СпрЗак.ссылка IS NULL THEN 1 ELSE 0 END СумОст,
+
+WWW.Работа*ISNULL(ЦенаЗН.Цена,ISNULL(Рег.цена,ЦенаРеестра)) 
+* CASE WHEN СпрЗак.ссылка IS NULL THEN 1 ELSE 0 END  СумРабота,
+
 WWW.СумРеестр СумРеестр
 
 
@@ -329,7 +340,7 @@ LEFT OUTER JOIN врЦенаЗН ЦенаЗН ON ЦенаЗН.ЗаказНаря
 
 LEFT OUTER JOIN РегистрСведений.ЗаказВРеестре ЗаказВРеестре ON ЗаказВРеестре.ЗаказНаряд =  WWW.ЗаказНаряд
 
-
+LEFT OUTER JOIN Справочник.ро_Заключения СпрЗак ON СпрЗак.ссылка = Док.Заключение и СпрЗак.БезОплаты = Истина
 </query>
 	</dataSet>
 	<totalField>
@@ -453,6 +464,20 @@ LEFT OUTER JOIN РегистрСведений.ЗаказВРеестре Зак
 		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
 		<useRestriction>false</useRestriction>
 	</parameter>
+	<parameter>
+		<name>КА</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>КА</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.Контрагенты</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>false</useRestriction>
+	</parameter>
 	<template>
 		<name>Макет1</name>
 		<template xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:AreaTemplate">
@@ -522,6 +547,10 @@ LEFT OUTER JOIN РегистрСведений.ЗаказВРеестре Зак
 					<dcsset:field>ДатаИспытания</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:field>Заключение</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>Цена</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
@@ -560,6 +589,10 @@ LEFT OUTER JOIN РегистрСведений.ЗаказВРеестре Зак
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 					<dcscor:parameter>Дт2</dcscor:parameter>
 					<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>КА</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
 				</dcscor:item>
 			</dcsset:dataParameters>
 			<dcsset:order>

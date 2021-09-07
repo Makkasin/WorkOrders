@@ -129,6 +129,70 @@
 					<ContextMenu name="ФизЛицоКонтекстноеМеню" id="101"/>
 					<ExtendedTooltip name="ФизЛицоРасширеннаяПодсказка" id="102"/>
 				</InputField>
+				<InputField name="Контрагент" id="132">
+					<DataPath>Отчет.Контрагент</DataPath>
+					<ClearButton>true</ClearButton>
+					<ContextMenu name="КонтрагентКонтекстноеМеню" id="133"/>
+					<ExtendedTooltip name="КонтрагентРасширеннаяПодсказка" id="134"/>
+				</InputField>
+				<InputField name="ПолеСуммы" id="119">
+					<DataPath>ПолеСуммы</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<TitleLocation>None</TitleLocation>
+					<ContextMenu name="ПолеСуммыКонтекстноеМеню" id="120"/>
+					<ExtendedTooltip name="ПолеСуммыРасширеннаяПодсказка" id="121"/>
+				</InputField>
+				<LabelField name="ПолеСтрок" id="129">
+					<DataPath>ПолеСтрок</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>7</MaxWidth>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Border width="1">
+						<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+					</Border>
+					<ContextMenu name="ПолеСтрокКонтекстноеМеню" id="130"/>
+					<ExtendedTooltip name="ПолеСтрокРасширеннаяПодсказка" id="131"/>
+				</LabelField>
+				<InputField name="ПоискСтрока" id="122">
+					<DataPath>ПоискСтрока</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Поиск</v8:content>
+						</v8:item>
+					</Title>
+					<TitleLocation>Left</TitleLocation>
+					<ClearButton>true</ClearButton>
+					<ContextMenu name="ПоискСтрокаКонтекстноеМеню" id="123"/>
+					<ExtendedTooltip name="ПоискСтрокаРасширеннаяПодсказка" id="124"/>
+					<Events>
+						<Event name="OnChange">ПоискСтрокаПриИзменении</Event>
+					</Events>
+				</InputField>
+				<Button name="ПоискНазад" id="125">
+					<Type>UsualButton</Type>
+					<Representation>Picture</Representation>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<AutoMaxHeight>false</AutoMaxHeight>
+					<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+					<CommandName>Form.Command.ПоискНазад</CommandName>
+					<Picture>
+						<xr:Ref>StdPicture.GoBack</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ExtendedTooltip name="ПоискНазадРасширеннаяПодсказка" id="126"/>
+				</Button>
+				<Button name="ПоискДалее" id="127">
+					<Type>UsualButton</Type>
+					<Representation>Picture</Representation>
+					<CommandName>Form.Command.ПоискДалее</CommandName>
+					<Picture>
+						<xr:Ref>StdPicture.GoForward</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ExtendedTooltip name="ПоискДалееРасширеннаяПодсказка" id="128"/>
+				</Button>
 				<Button name="НовыйПрайс" id="117">
 					<Type>UsualButton</Type>
 					<Representation>PictureAndText</Representation>
@@ -482,6 +546,7 @@
 			<ContextMenu name="РезультатКонтекстноеМеню" id="6"/>
 			<ExtendedTooltip name="РезультатРасширеннаяПодсказка" id="7"/>
 			<Events>
+				<Event name="OnActivate">РезультатПриАктивизации</Event>
 				<Event name="DetailProcessing">РезультатОбработкаРасшифровки</Event>
 			</Events>
 		</SpreadSheetDocumentField>
@@ -530,6 +595,52 @@
 				<v8:Type>xs:string</v8:Type>
 				<v8:StringQualifiers>
 					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПоискСтрока" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поиск строка</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>77</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПолеСуммы" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поле суммы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПолеСтрок" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поле кол строк</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>11</v8:Length>
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
 			</Type>
@@ -595,6 +706,36 @@
 				</v8:item>
 			</ToolTip>
 			<Action>НоывйПрайс</Action>
+		</Command>
+		<Command name="ПоискДалее" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поиск далее</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поиск далее</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПоискДалее</Action>
+		</Command>
+		<Command name="ПоискНазад" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поиск далее</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поиск далее</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПоискНазад</Action>
 		</Command>
 	</Commands>
 </Form>
