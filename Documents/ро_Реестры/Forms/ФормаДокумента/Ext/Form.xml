@@ -289,6 +289,11 @@
 										<CommandName>Form.Item.ЗаказНаряды.StandardCommand.CancelSearch</CommandName>
 										<ExtendedTooltip name="ЗаказНарядыОтменитьПоискРасширеннаяПодсказка" id="80"/>
 									</Button>
+									<Button name="ЗаказНарядыОткрытьРегЦен" id="192">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ОткрытьРегЦен</CommandName>
+										<ExtendedTooltip name="ЗаказНарядыОткрытьРегЦенРасширеннаяПодсказка" id="193"/>
+									</Button>
 								</ChildItems>
 							</AutoCommandBar>
 							<ExtendedTooltip name="ЗаказНарядыРасширеннаяПодсказка" id="16"/>
@@ -866,6 +871,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ПечатьРеестрРабот</Action>
+		</Command>
+		<Command name="ОткрытьРегЦен" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Регистр цен</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть рег цен</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьРегЦен</Action>
 		</Command>
 	</Commands>
 </Form>

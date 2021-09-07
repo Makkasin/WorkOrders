@@ -228,6 +228,7 @@
 			<InformationRegister>Прайс</InformationRegister>
 			<InformationRegister>СоответсвиеИдБухгалтерии</InformationRegister>
 			<InformationRegister>РегистрЦен</InformationRegister>
+			<InformationRegister>ЗаказВРеестре</InformationRegister>
 			<AccumulationRegister>РаботаРО</AccumulationRegister>
 			<AccumulationRegister>ОстатокРО</AccumulationRegister>
 		</ChildObjects>
