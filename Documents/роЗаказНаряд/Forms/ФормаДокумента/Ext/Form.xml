@@ -561,6 +561,11 @@
 													<ContextMenu name="КонтролерКонтекстноеМеню" id="49"/>
 													<ExtendedTooltip name="КонтролерРасширеннаяПодсказка" id="50"/>
 												</InputField>
+												<InputField name="КонтролерДеф" id="358">
+													<DataPath>Объект.КонтролерДеф</DataPath>
+													<ContextMenu name="КонтролерДефКонтекстноеМеню" id="359"/>
+													<ExtendedTooltip name="КонтролерДефРасширеннаяПодсказка" id="360"/>
+												</InputField>
 											</ChildItems>
 										</UsualGroup>
 										<LabelField name="ЛогСТК" id="143">

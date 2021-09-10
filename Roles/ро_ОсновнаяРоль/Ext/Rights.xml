@@ -6,10 +6,6 @@
 	<object>
 		<name>Catalog.ПечатныеФормы</name>
 		<right>
-			<name>Delete</name>
-			<value>false</value>
-		</right>
-		<right>
 			<name>InteractiveDelete</name>
 			<value>false</value>
 		</right>

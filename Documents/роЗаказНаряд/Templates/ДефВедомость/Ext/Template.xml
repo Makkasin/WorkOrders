@@ -593,7 +593,13 @@
 		<index>15</index>
 		<row>
 			<formatIndex>9</formatIndex>
-			<empty>true</empty>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl/>
+				</c>
+			</c>
 		</row>
 	</rowsItem>
 	<rowsItem>
@@ -604,14 +610,14 @@
 				<i>1</i>
 				<c>
 					<f>35</f>
-					<parameter>длжКонтролерСТК</parameter>
+					<parameter>длжКонтролерДеф</parameter>
 				</c>
 			</c>
 			<c>
 				<i>5</i>
 				<c>
 					<f>36</f>
-					<parameter>КонтролерСТК</parameter>
+					<parameter>КонтролерДеф</parameter>
 				</c>
 			</c>
 		</row>

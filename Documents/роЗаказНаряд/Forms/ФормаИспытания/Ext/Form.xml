@@ -173,6 +173,11 @@
 			<ContextMenu name="КонтролерКонтекстноеМеню" id="36"/>
 			<ExtendedTooltip name="КонтролерРасширеннаяПодсказка" id="37"/>
 		</InputField>
+		<InputField name="КонтролерДеф" id="63">
+			<DataPath>КонтролерДеф</DataPath>
+			<ContextMenu name="КонтролерДефКонтекстноеМеню" id="64"/>
+			<ExtendedTooltip name="КонтролерДефРасширеннаяПодсказка" id="65"/>
+		</InputField>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
@@ -316,6 +321,17 @@
 					<v8:Length>222</v8:Length>
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КонтролерДеф" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Контролер (деф.)</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ФизическиеЛица</v8:Type>
 			</Type>
 		</Attribute>
 	</Attributes>

@@ -76,6 +76,13 @@
 			<ContextMenu name="ПолеГруппировкиКонтекстноеМеню" id="108"/>
 			<ExtendedTooltip name="ПолеГруппировкиРасширеннаяПодсказка" id="109"/>
 		</InputField>
+		<CheckBoxField name="ЗамещаетОсновнуюФорму" id="110">
+			<DataPath>Объект.ЗамещаетОсновнуюФорму</DataPath>
+			<TitleLocation>Right</TitleLocation>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ЗамещаетОсновнуюФормуКонтекстноеМеню" id="111"/>
+			<ExtendedTooltip name="ЗамещаетОсновнуюФормуРасширеннаяПодсказка" id="112"/>
+		</CheckBoxField>
 		<Pages name="грпСтраницы" id="40">
 			<Title>
 				<v8:item>
