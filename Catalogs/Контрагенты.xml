@@ -1657,6 +1657,7 @@
 			<Form>ФормаСписка</Form>
 			<Form>ФормаЗагрузкаКА</Form>
 			<Form>ФормаВыбора</Form>
+			<Form>ФормаСписка1</Form>
 		</ChildObjects>
 	</Catalog>
 </MetaDataObject>

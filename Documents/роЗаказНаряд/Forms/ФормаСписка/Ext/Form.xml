@@ -77,6 +77,11 @@
 				<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
 				<ExtendedTooltip name="ФормаСправочникПечатныеФормыРасширеннаяПодсказка" id="86"/>
 			</Button>
+			<Button name="ФормаСправочникКонтрагенты" id="92">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.СправочникКонтрагенты</CommandName>
+				<ExtendedTooltip name="ФормаСправочникКонтрагентыРасширеннаяПодсказка" id="93"/>
+			</Button>
 		</ChildItems>
 	</AutoCommandBar>
 	<Events>
@@ -304,6 +309,18 @@
 					</Format>
 					<ContextMenu name="ДатаКонтекстноеМеню" id="17"/>
 					<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="18"/>
+				</LabelField>
+				<LabelField name="ДокОтгрузкиДата" id="89">
+					<DataPath>Список.ДокОтгрузки.Date</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отгрузка</v8:content>
+						</v8:item>
+					</Title>
+					<Width>6</Width>
+					<ContextMenu name="ДокОтгрузкиДатаКонтекстноеМеню" id="90"/>
+					<ExtendedTooltip name="ДокОтгрузкиДатаРасширеннаяПодсказка" id="91"/>
 				</LabelField>
 				<LabelField name="Номер" id="19">
 					<DataPath>Список.Number</DataPath>
@@ -637,6 +654,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>АктЗаМесяц</Action>
+		</Command>
+		<Command name="СправочникКонтрагенты" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Справочник Контрагенты</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Справочник оборудование</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СправочникКонтрагенты</Action>
 		</Command>
 	</Commands>
 </Form>

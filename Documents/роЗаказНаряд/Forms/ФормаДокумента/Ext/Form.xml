@@ -186,6 +186,11 @@
 					<ContextMenu name="ЦенаСтрокаКонтекстноеМеню" id="219"/>
 					<ExtendedTooltip name="ЦенаСтрокаРасширеннаяПодсказка" id="220"/>
 				</LabelField>
+				<Button name="УстановитьЦену" id="361">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.УстановитьЦену</CommandName>
+					<ExtendedTooltip name="УстановитьЦенуРасширеннаяПодсказка" id="362"/>
+				</Button>
 			</ChildItems>
 		</UsualGroup>
 		<InputField name="НомерОборудования" id="13">
@@ -1331,6 +1336,32 @@
 				</Column>
 			</Columns>
 		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ЦенаСтрока</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.Цена</dcsset:left>
+						<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:FieldSelectionBackColor</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Шрифт</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" height="9" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
 	</Attributes>
 	<Commands>
 		<Command name="ПечатьКарточки" id="1">
@@ -1439,6 +1470,22 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ОбновитьЦену</Action>
+		</Command>
+		<Command name="УстановитьЦену" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить цену</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить цену</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УстановитьЦену</Action>
+			<ModifiesSavedData>true</ModifiesSavedData>
 		</Command>
 	</Commands>
 </Form>

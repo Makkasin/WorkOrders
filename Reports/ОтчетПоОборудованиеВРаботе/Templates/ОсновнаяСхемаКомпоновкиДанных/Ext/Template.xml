@@ -35,6 +35,17 @@
 					<v8:content>Цена</v8:content>
 				</v8:item>
 			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=2</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
 		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>ЗаказНаряд</dataPath>
@@ -142,6 +153,17 @@
 					<v8:content>Сумма ож. реестра</v8:content>
 				</v8:item>
 			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=2</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
 		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>СумОст</dataPath>
@@ -152,6 +174,17 @@
 					<v8:content>Сумма ост.</v8:content>
 				</v8:item>
 			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=2</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
 		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>СумРеестр</dataPath>
@@ -162,6 +195,17 @@
 					<v8:content>Сумма реестр</v8:content>
 				</v8:item>
 			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=2</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
 		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>ДатаИспытания</dataPath>
@@ -275,12 +319,23 @@ GROUP BY
 ;
 SELECT
 	Тбл.ЗаказНаряд,
-	SUM(спрРаб.Цена*докРаб.Количество) Цена
+	Док.Цена
 
 INTO врЦенаЗН
 FROM врОст Тбл
+INNER JOIN Документ.роЗаказНаряд Док ON Док.ссылка = Тбл.ЗаказНаряд
+									  и Док.Цена &lt;&gt; 0
+
+UNION ALL
+
+SELECT
+	Тбл.ЗаказНаряд,
+	SUM(спрРаб.Цена*докРаб.Количество) Цена
+
+FROM врОст Тбл
 
 INNER JOIN Документ.роЗаказНаряд Док ON Док.ссылка = Тбл.ЗаказНаряд
+									  и Док.Цена   = 0
 
 INNER JOIN РегистрСведений.регистрЦен РегЦен ON  РегЦен.Контрагент   = Док.Контрагент
 											   и регЦен.Оборудование = Док.Оборудование
