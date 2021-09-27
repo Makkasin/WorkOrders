@@ -477,7 +477,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>[Оборудование] [НомерОборудованияСписок]</v8:content>
+							<v8:content>[Оборудование] [НомерОборудованияСписок] [_скобки]</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -853,16 +853,6 @@
 			<type>Rows</type>
 			<beginRow>10</beginRow>
 			<endRow>10</endRow>
-			<beginColumn>-1</beginColumn>
-			<endColumn>-1</endColumn>
-		</area>
-	</namedItem>
-	<namedItem xsi:type="NamedItemCells">
-		<name>Строка1</name>
-		<area>
-			<type>Rows</type>
-			<beginRow>20</beginRow>
-			<endRow>20</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>

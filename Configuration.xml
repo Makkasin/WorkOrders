@@ -220,6 +220,7 @@
 			<Document>ро_ПриходОборудования</Document>
 			<Document>ро_Реестры</Document>
 			<Enum>ВидыДокументовДЛяПечФорм</Enum>
+			<Enum>ТипыКонтактнойИнформации</Enum>
 			<Report>БазовыйОтчет</Report>
 			<Report>ОтчетПоЗаказам</Report>
 			<Report>ОтчетПоОборудованиеВРаботе</Report>

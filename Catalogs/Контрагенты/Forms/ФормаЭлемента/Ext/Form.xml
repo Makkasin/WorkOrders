@@ -202,12 +202,18 @@
 									<ContextMenu name="ПечатныеФормыПечФормаКонтекстноеМеню" id="45"/>
 									<ExtendedTooltip name="ПечатныеФормыПечФормаРасширеннаяПодсказка" id="46"/>
 								</InputField>
-								<InputField name="ПечатныеФормыИспользоватьВДокументах" id="121">
-									<DataPath>Объект.ПечатныеФормы.ИспользоватьВДокументах</DataPath>
+								<LabelField name="ПечатныеФормыПечФормаРодитель" id="169">
+									<DataPath>Объект.ПечатныеФормы.ПечФорма.Parent</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа</v8:content>
+										</v8:item>
+									</Title>
 									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="ПечатныеФормыИспользоватьВДокументахКонтекстноеМеню" id="122"/>
-									<ExtendedTooltip name="ПечатныеФормыИспользоватьВДокументахРасширеннаяПодсказка" id="123"/>
-								</InputField>
+									<ContextMenu name="ПечатныеФормыПечФормаРодительКонтекстноеМеню" id="170"/>
+									<ExtendedTooltip name="ПечатныеФормыПечФормаРодительРасширеннаяПодсказка" id="171"/>
+								</LabelField>
 							</ChildItems>
 						</Table>
 						<InputField name="НомерСтрокиМакетаТТН" id="78">
@@ -266,14 +272,11 @@
 								<ExtendedTooltip name="КонтактнаяИнформацияУправлениеПоискомРасширеннаяПодсказка" id="63"/>
 							</SearchControlAddition>
 							<ChildItems>
-								<InputField name="КонтактнаяИнформацияВид" id="64">
-									<DataPath>Объект.КонтактнаяИнформация.Вид</DataPath>
+								<InputField name="КонтактнаяИнформацияТип" id="166">
+									<DataPath>Объект.КонтактнаяИнформация.Тип</DataPath>
 									<EditMode>EnterOnInput</EditMode>
-									<Width>10</Width>
-									<AutoMaxWidth>false</AutoMaxWidth>
-									<HorizontalStretch>false</HorizontalStretch>
-									<ContextMenu name="КонтактнаяИнформацияВидКонтекстноеМеню" id="65"/>
-									<ExtendedTooltip name="КонтактнаяИнформацияВидРасширеннаяПодсказка" id="66"/>
+									<ContextMenu name="КонтактнаяИнформацияТипКонтекстноеМеню" id="167"/>
+									<ExtendedTooltip name="КонтактнаяИнформацияТипРасширеннаяПодсказка" id="168"/>
 								</InputField>
 								<InputField name="КонтактнаяИнформацияПредставление" id="67">
 									<DataPath>Объект.КонтактнаяИнформация.Представление</DataPath>
