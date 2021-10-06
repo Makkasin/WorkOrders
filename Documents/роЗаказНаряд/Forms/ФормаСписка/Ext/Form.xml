@@ -82,6 +82,11 @@
 				<CommandName>Form.Command.СправочникКонтрагенты</CommandName>
 				<ExtendedTooltip name="ФормаСправочникКонтрагентыРасширеннаяПодсказка" id="93"/>
 			</Button>
+			<Button name="ФормаМетодичка" id="94">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.Методичка</CommandName>
+				<ExtendedTooltip name="ФормаМетодичкаРасширеннаяПодсказка" id="95"/>
+			</Button>
 		</ChildItems>
 	</AutoCommandBar>
 	<Events>
@@ -669,6 +674,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>СправочникКонтрагенты</Action>
+		</Command>
+		<Command name="Методичка" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Методичка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Методичка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Методичка</Action>
 		</Command>
 	</Commands>
 </Form>
