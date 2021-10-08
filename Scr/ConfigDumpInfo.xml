@@ -314,7 +314,7 @@
 		<Metadata name="DataProcessor.КорректировкаДвижений.Help" id="d8816490-5c8d-48ca-9cbd-9e830e3bcf5c.1" configVersion="cd28d76f1a07e4478572c229a5e5a91c00000000"/>
 		<Metadata name="DataProcessor.КорректировкаДвижений.ManagerModule" id="d8816490-5c8d-48ca-9cbd-9e830e3bcf5c.2" configVersion="80d909ea19f3e9409eb4d08e9b8075ad00000000"/>
 		<Metadata name="DataProcessor.КорректировкаДвижений.ObjectModule" id="d8816490-5c8d-48ca-9cbd-9e830e3bcf5c.0" configVersion="41e7c3306745eb47b8a9496b0db494ef00000000"/>
-		<Metadata name="Document.ро_Отгрузка" id="61fc8500-b2df-45db-89f1-d1cc0b84ceb1" configVersion="3b8bcda2bd0527458cf0399a2c10d44300000000">
+		<Metadata name="Document.ро_Отгрузка" id="61fc8500-b2df-45db-89f1-d1cc0b84ceb1" configVersion="41f3c5e1d679c44e9acc3c3f28d2dacd00000000">
 			<Metadata name="Document.ро_Отгрузка.Attribute.Контрагент" id="0277b0f8-31fc-4ec4-8d14-24169329348d"/>
 			<Metadata name="Document.ро_Отгрузка.Attribute.Организация" id="071be961-ca91-4850-beb2-730ce782597f"/>
 			<Metadata name="Document.ро_Отгрузка.Attribute.ТелефоныПеревозчика" id="0741eeff-20c6-4091-9d7d-20169e8940cb"/>
@@ -334,6 +334,7 @@
 			<Metadata name="Document.ро_Отгрузка.Attribute.ВремяОбработкиДокумента" id="c29b7682-2bfc-4a87-94ef-9b66a7410e1e"/>
 			<Metadata name="Document.ро_Отгрузка.TabularSection.ЗаказНаряды" id="d120423f-10be-460e-a292-4f68bda2b97f"/>
 			<Metadata name="Document.ро_Отгрузка.Attribute.Комментарий" id="d69696c6-38df-4fe0-afde-5e0f4b8c0aa0"/>
+			<Metadata name="Document.ро_Отгрузка.Attribute.ЛогПроверил" id="d73bd393-5e18-4878-ae59-de5cd020c218"/>
 			<Metadata name="Document.ро_Отгрузка.Attribute.Ответственный" id="dcbd0d4c-660f-4e03-9b78-a5b3d956895c"/>
 			<Metadata name="Document.ро_Отгрузка.Attribute.ДатаПЛ" id="dfe718e7-d65f-44ab-9c87-66b11c7c4de6"/>
 			<Metadata name="Document.ро_Отгрузка.Attribute.ПодписантДолжность" id="e21ff9cd-176d-46de-9093-7dc65bb0ae01"/>
@@ -343,13 +344,13 @@
 			<Metadata name="Document.ро_Отгрузка.Attribute.ГосНомер" id="ee678b38-085d-49ab-adac-5aa8eebd4ef3"/>
 			<Metadata name="Document.ро_Отгрузка.Attribute.АдресПеревозчика" id="efd0ef9a-c9b7-452e-b9f9-bd0aae4159c2"/>
 		</Metadata>
-		<Metadata name="Document.ро_Отгрузка.Form.ФормаДокумента" id="34f96cef-eeec-4040-9226-0c491b4b26dc" configVersion="4ad206363efcc748979b643050061fe700000000"/>
-		<Metadata name="Document.ро_Отгрузка.Form.ФормаДокумента.Form" id="34f96cef-eeec-4040-9226-0c491b4b26dc.0" configVersion="533b86ed3c0b0341adb36fecf28f88a800000000"/>
+		<Metadata name="Document.ро_Отгрузка.Form.ФормаДокумента" id="34f96cef-eeec-4040-9226-0c491b4b26dc" configVersion="77f4eea32062324c98cc9c854436f3bb00000000"/>
+		<Metadata name="Document.ро_Отгрузка.Form.ФормаДокумента.Form" id="34f96cef-eeec-4040-9226-0c491b4b26dc.0" configVersion="6ac500eb825bf24399f37b5bd635d46600000000"/>
 		<Metadata name="Document.ро_Отгрузка.Form.ФормаЗагрузкаПЛ" id="369e1e50-b228-4cc7-970a-0a53b5213a6c" configVersion="7c213389903b39468db4d25a8f497efe00000000"/>
 		<Metadata name="Document.ро_Отгрузка.Form.ФормаЗагрузкаПЛ.Form" id="369e1e50-b228-4cc7-970a-0a53b5213a6c.0" configVersion="8438b40c90414848be8fecdb49915ecf00000000"/>
-		<Metadata name="Document.ро_Отгрузка.Form.ФормаСписка" id="f434898b-b515-41d5-ab19-3405b6876f31" configVersion="a07d47f5313da54fb44983bb8fbc3e9a00000000"/>
-		<Metadata name="Document.ро_Отгрузка.Form.ФормаСписка.Form" id="f434898b-b515-41d5-ab19-3405b6876f31.0" configVersion="90532805a614c34e8ec3a9c01a5a7ab900000000"/>
-		<Metadata name="Document.ро_Отгрузка.ManagerModule" id="61fc8500-b2df-45db-89f1-d1cc0b84ceb1.2" configVersion="e36f541b97db1b44b198193158b17b8c00000000"/>
+		<Metadata name="Document.ро_Отгрузка.Form.ФормаСписка" id="f434898b-b515-41d5-ab19-3405b6876f31" configVersion="80e8724801568244a9fd3a9571b7a6bf00000000"/>
+		<Metadata name="Document.ро_Отгрузка.Form.ФормаСписка.Form" id="f434898b-b515-41d5-ab19-3405b6876f31.0" configVersion="f515a205c41c0a44b53b89ad7d8e6fc500000000"/>
+		<Metadata name="Document.ро_Отгрузка.ManagerModule" id="61fc8500-b2df-45db-89f1-d1cc0b84ceb1.2" configVersion="d7999282a747f84b8f5d742e500844c500000000"/>
 		<Metadata name="Document.ро_Отгрузка.ObjectModule" id="61fc8500-b2df-45db-89f1-d1cc0b84ceb1.0" configVersion="b93a0188ee7e3a4982eda0578a802f5300000000"/>
 		<Metadata name="Document.ро_Отгрузка.Template.МакетПриложениеКТТН" id="02cdf291-bb2e-46bc-9948-963f3a11783f" configVersion="d7c0760d813b8b49ac5f2c5ed705440500000000"/>
 		<Metadata name="Document.ро_Отгрузка.Template.МакетПриложениеКТТН.Template" id="02cdf291-bb2e-46bc-9948-963f3a11783f.0" configVersion="83f0fb1167dc96409c1e9c9fbc25642500000000"/>
@@ -392,8 +393,8 @@
 			<Metadata name="Document.ро_ПриходОборудования.Attribute.ВесТТН" id="f480dd10-436c-4c71-bca7-aedf3d4521ca"/>
 			<Metadata name="Document.ро_ПриходОборудования.Attribute.ГосНомер" id="fcfc2510-1a04-458f-b6c6-cc3593b2d402"/>
 		</Metadata>
-		<Metadata name="Document.ро_ПриходОборудования.Form.ФормаДокумента" id="4543444b-b833-4016-a12c-fd8fb57ca3cc" configVersion="622f463829577b43ab0b38988c358a3e00000000"/>
-		<Metadata name="Document.ро_ПриходОборудования.Form.ФормаДокумента.Form" id="4543444b-b833-4016-a12c-fd8fb57ca3cc.0" configVersion="ade764c990ebae4ba9722c83c5e20fe200000000"/>
+		<Metadata name="Document.ро_ПриходОборудования.Form.ФормаДокумента" id="4543444b-b833-4016-a12c-fd8fb57ca3cc" configVersion="fd58c445e14e3945aa52e0c7a3096e9f00000000"/>
+		<Metadata name="Document.ро_ПриходОборудования.Form.ФормаДокумента.Form" id="4543444b-b833-4016-a12c-fd8fb57ca3cc.0" configVersion="76a03126d13ea2418579d2f1310ddf8000000000"/>
 		<Metadata name="Document.ро_ПриходОборудования.Form.ФормаСписка" id="cb00c302-dfe0-49b0-9258-acdd4b5167ef" configVersion="98a7d5f1908ff749a0e1676b934c52c800000000"/>
 		<Metadata name="Document.ро_ПриходОборудования.Form.ФормаСписка.Form" id="cb00c302-dfe0-49b0-9258-acdd4b5167ef.0" configVersion="97cc3d3447bbc14383221d0587df38f600000000"/>
 		<Metadata name="Document.ро_ПриходОборудования.ManagerModule" id="e3ad317d-a6c6-47d9-9469-00a74f1e49d1.2" configVersion="cff16eabfe21fe40843897619c6004f000000000"/>
