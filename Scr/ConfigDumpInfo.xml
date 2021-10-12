@@ -87,11 +87,11 @@
 		<Metadata name="Catalog.Контрагенты.Form.ФормаСписка.Form" id="c9e09db3-2ca9-4411-9a22-7e883a2c4c2a.0" configVersion="bdd38a8ce4d5be499b3517ecffed652a00000000"/>
 		<Metadata name="Catalog.Контрагенты.Form.ФормаСписка1" id="d2eb9613-840c-4e06-8fe4-2efd74e6246a" configVersion="bd97a2e9854d9f4ab6ccf736a92815b500000000"/>
 		<Metadata name="Catalog.Контрагенты.Form.ФормаСписка1.Form" id="d2eb9613-840c-4e06-8fe4-2efd74e6246a.0" configVersion="d989433704a3f348ac2f2242eff28df300000000"/>
-		<Metadata name="Catalog.Контрагенты.Form.ФормаЭлемента" id="2665423c-15ca-4220-8b0a-fc3e2bb9d066" configVersion="cb174df97e610346845153281c9c6ee500000000"/>
-		<Metadata name="Catalog.Контрагенты.Form.ФормаЭлемента.Form" id="2665423c-15ca-4220-8b0a-fc3e2bb9d066.0" configVersion="3b911669f443de4788a08162cfaf7b1700000000"/>
+		<Metadata name="Catalog.Контрагенты.Form.ФормаЭлемента" id="2665423c-15ca-4220-8b0a-fc3e2bb9d066" configVersion="952c00e19a54814290c8cd3ab8f7b73400000000"/>
+		<Metadata name="Catalog.Контрагенты.Form.ФормаЭлемента.Form" id="2665423c-15ca-4220-8b0a-fc3e2bb9d066.0" configVersion="9a411ba17015c34cad22c99cdc20081500000000"/>
 		<Metadata name="Catalog.Контрагенты.ManagerModule" id="6e85dde4-856c-4a6f-8613-f0a7fd9eba96.3" configVersion="f26cfafae9e2b24b9c0bbe654eee466400000000"/>
 		<Metadata name="Catalog.Контрагенты.ObjectModule" id="6e85dde4-856c-4a6f-8613-f0a7fd9eba96.0" configVersion="1f638bbcfec1dd48ba5244fcdb28b8eb00000000"/>
-		<Metadata name="Catalog.ПечатныеФормы" id="047d5058-9ba7-4581-8046-944f5e6362d5" configVersion="205bc1d2959498428c27a8313c474a7300000000">
+		<Metadata name="Catalog.ПечатныеФормы" id="047d5058-9ba7-4581-8046-944f5e6362d5" configVersion="aaefa6a38e16b042ae346776c3aae1b400000000">
 			<Metadata name="Catalog.ПечатныеФормы.TabularSection.ФильтрЗапроса.Attribute.ЗнФильтра" id="0942a15b-afb0-49bd-82b7-c008d1f3911c"/>
 			<Metadata name="Catalog.ПечатныеФормы.TabularSection.ФормыПоКонтрагентам.Attribute.хрОбработкаПечати" id="199b712a-51d3-431d-9cef-73ff2e08e726"/>
 			<Metadata name="Catalog.ПечатныеФормы.TabularSection.ФильтрЗапроса.Attribute.СтрокаФильтра" id="2c07a7f0-1e42-4ef2-9a60-cb2793e1eb9a"/>
@@ -115,8 +115,8 @@
 		<Metadata name="Catalog.ПечатныеФормы.Form.ФормаСписка.Form" id="71402b80-a84a-439f-84b1-e202af8894fc.0" configVersion="fd1d6a410bbb71499f90337dafc530f300000000"/>
 		<Metadata name="Catalog.ПечатныеФормы.Form.ФормаЭлемента" id="d8646f0f-8c10-4a12-babb-9559dd4f2918" configVersion="db965af4a9e27844acfb207a790d687300000000"/>
 		<Metadata name="Catalog.ПечатныеФормы.Form.ФормаЭлемента.Form" id="d8646f0f-8c10-4a12-babb-9559dd4f2918.0" configVersion="ac59d04d80666840aded66da74b0291b00000000"/>
-		<Metadata name="Catalog.ПечатныеФормы.ManagerModule" id="047d5058-9ba7-4581-8046-944f5e6362d5.3" configVersion="1f42c12f6bf57b45b36353b02d4916ad00000000"/>
-		<Metadata name="Catalog.ПечатныеФормы.Predefined" id="047d5058-9ba7-4581-8046-944f5e6362d5.1c" configVersion="b99402b4be1ed743bde87b2d7263225200000000"/>
+		<Metadata name="Catalog.ПечатныеФормы.ManagerModule" id="047d5058-9ba7-4581-8046-944f5e6362d5.3" configVersion="f543880519060645a5f0b71213148ec800000000"/>
+		<Metadata name="Catalog.ПечатныеФормы.Predefined" id="047d5058-9ba7-4581-8046-944f5e6362d5.1c" configVersion="ec9578aaf737634fa4935574870c830000000000"/>
 		<Metadata name="Catalog.ПечатныеФормы.Template.Макет" id="69c71014-25d9-4030-8e20-dbd81da711a0" configVersion="17df70df3b96c647aa5e950e052d3cb100000000"/>
 		<Metadata name="Catalog.ПечатныеФормы.Template.Макет.Template" id="69c71014-25d9-4030-8e20-dbd81da711a0.0" configVersion="50e382665a01204888200515e40e7fbf00000000"/>
 		<Metadata name="Catalog.ПечатныеФормы.Template.Макет1" id="32c75ab3-e342-428c-b5df-6cd2e87d30ce" configVersion="7bc981f26c402244a3ca190bc111599d00000000"/>
@@ -445,7 +445,7 @@
 		<Metadata name="Document.ро_Реестры.Template.РеестрРабот.Template" id="85c203be-4e72-45bf-912d-b4a08165091c.0" configVersion="4ed74b5a834495418ec2aefcf8eb0b6600000000"/>
 		<Metadata name="Document.ро_Реестры.Template.РеестрСвод" id="5968e531-e959-46d6-83cf-91350f7ca344" configVersion="48ea9f97f430af41ba178631673f5a3600000000"/>
 		<Metadata name="Document.ро_Реестры.Template.РеестрСвод.Template" id="5968e531-e959-46d6-83cf-91350f7ca344.0" configVersion="0a2b83a3182bfd49abf4dd86a297340100000000"/>
-		<Metadata name="Document.роЗаказНаряд" id="598e1d6e-ef2b-4b57-85a0-9025502f786e" configVersion="b44772ca748b9d43a213eacbc843580500000000">
+		<Metadata name="Document.роЗаказНаряд" id="598e1d6e-ef2b-4b57-85a0-9025502f786e" configVersion="2901c68286aab5488c95d91ee5248b9100000000">
 			<Metadata name="Document.роЗаказНаряд.TabularSection.Дефектовка.Attribute.Покупка" id="02faa97e-a4ec-41cc-9df3-cc7e731e85a0"/>
 			<Metadata name="Document.роЗаказНаряд.Attribute.ДатаИзготовления" id="04d6695b-a70b-44dc-bf75-7a9b1fb7edd5"/>
 			<Metadata name="Document.роЗаказНаряд.Attribute.ПримечаниеДопОбр1" id="0734c1ca-fef4-482b-a3ba-2447d0b00212"/>
@@ -507,9 +507,10 @@
 			<Metadata name="Document.роЗаказНаряд.TabularSection.Дефектовка.Attribute.Деталь" id="fb3accea-edd2-4b81-88fd-686bb1b4fe7a"/>
 			<Metadata name="Document.роЗаказНаряд.Attribute.масса" id="fdd43053-2f96-441c-ad80-97156304f9b0"/>
 			<Metadata name="Document.роЗаказНаряд.Attribute.ПримечаниеСтрока" id="fdfeec7f-7986-4260-bd8f-91cf1ec6fb86"/>
+			<Metadata name="Document.роЗаказНаряд.Attribute.ПроцентВыполнения" id="fe2444c8-511a-42f3-a3fd-e3780da6faa1"/>
 		</Metadata>
-		<Metadata name="Document.роЗаказНаряд.Form.ФормаДокумента" id="f9012d40-2490-4c89-a62c-6ccb09490126" configVersion="760dfdddb08ce441be099d06e2f6f3de00000000"/>
-		<Metadata name="Document.роЗаказНаряд.Form.ФормаДокумента.Form" id="f9012d40-2490-4c89-a62c-6ccb09490126.0" configVersion="bc8013eb0616fe468dc034751005862300000000"/>
+		<Metadata name="Document.роЗаказНаряд.Form.ФормаДокумента" id="f9012d40-2490-4c89-a62c-6ccb09490126" configVersion="ee808825b2b7b64ab97ac271c257792d00000000"/>
+		<Metadata name="Document.роЗаказНаряд.Form.ФормаДокумента.Form" id="f9012d40-2490-4c89-a62c-6ccb09490126.0" configVersion="9988fb17ef759e4c825abcb69fb4c0b500000000"/>
 		<Metadata name="Document.роЗаказНаряд.Form.ФормаИспытания" id="75c07a70-6f34-4ae1-a481-fc64085e26bc" configVersion="b86cba1e4b162d4e85da1f9581d1bd8d00000000"/>
 		<Metadata name="Document.роЗаказНаряд.Form.ФормаИспытания.Form" id="75c07a70-6f34-4ae1-a481-fc64085e26bc.0" configVersion="1c22087cc89257408bc5811a3d340e1c00000000"/>
 		<Metadata name="Document.роЗаказНаряд.Form.ФормаСписка" id="05af871f-7780-4a49-88f2-bab5cb86dcba" configVersion="3df35571f3201d48a52ebbcc9d32c60d00000000"/>
@@ -651,8 +652,8 @@
 		<Metadata name="Report.ОтчетПоОборудованиеВРаботе.Template.ОсновнаяСхемаКомпоновкиДанных.Template" id="a74a33b4-aadc-4ad5-b035-4fa12b5b2ab6.0" configVersion="07cab374e6ecf24cbf795821d3f8ecfe00000000"/>
 		<Metadata name="Role.изменятьЦены" id="b9fcbc7c-5098-40e6-9539-38ec639b2154" configVersion="88292e8affc2ed428244b8370746c5c900000000"/>
 		<Metadata name="Role.изменятьЦены.Rights" id="b9fcbc7c-5098-40e6-9539-38ec639b2154.0" configVersion="c5138029a9bcf245b16626cfc0650e1100000000"/>
-		<Metadata name="Role.ро_ОсновнаяРоль" id="97929bfb-9557-4815-9af3-5aadb8bb4144" configVersion="93d93ace0acc954a8dcf2de6946013d900000000"/>
-		<Metadata name="Role.ро_ОсновнаяРоль.Rights" id="97929bfb-9557-4815-9af3-5aadb8bb4144.0" configVersion="b3e9627b22bba8469edac1aaf7e46d4f00000000"/>
+		<Metadata name="Role.ро_ОсновнаяРоль" id="97929bfb-9557-4815-9af3-5aadb8bb4144" configVersion="1d65053fec834d4794befbd760d1d09500000000"/>
+		<Metadata name="Role.ро_ОсновнаяРоль.Rights" id="97929bfb-9557-4815-9af3-5aadb8bb4144.0" configVersion="13df61a0a36ccc4187c9dcf52507e32b00000000"/>
 		<Metadata name="SessionParameter.ТекущийПользователь" id="bc16e97f-1307-4cb7-825b-95cacdace056" configVersion="006b1ecb2329d046b2933c78f787a3d300000000"/>
 		<Metadata name="Subsystem.ро_ЗаказНаряды" id="76f1ae1e-dbf7-48e9-a836-1fa728c81181" configVersion="3d2b58749f24c14697df0b5b51ef958c00000000"/>
 	</ConfigVersions>

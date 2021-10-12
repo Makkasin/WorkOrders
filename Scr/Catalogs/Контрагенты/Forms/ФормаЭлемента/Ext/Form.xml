@@ -304,6 +304,7 @@
 					<ExtendedTooltip name="стрНастройкиРасширеннаяПодсказка" id="82"/>
 					<ChildItems>
 						<UsualGroup name="Группа2" id="108">
+							<Group>AlwaysHorizontal</Group>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="109"/>
@@ -323,6 +324,13 @@
 									<ContextMenu name="СубконтоБухКодКонтекстноеМеню" id="114"/>
 									<ExtendedTooltip name="СубконтоБухКодРасширеннаяПодсказка" id="115"/>
 								</InputField>
+								<Button name="ЗаписатьЭлемент" id="172">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ЗаписатьЭлемент</CommandName>
+									<BackColor>web:Wheat</BackColor>
+									<Font bold="true" kind="AutoFont"/>
+									<ExtendedTooltip name="ЗаписатьЭлементРасширеннаяПодсказка" id="173"/>
+								</Button>
 							</ChildItems>
 						</UsualGroup>
 						<Table name="спкКолонок" id="83">
@@ -497,6 +505,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ОбновитьДанные</Action>
+		</Command>
+		<Command name="ЗаписатьЭлемент" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать элемент</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаписатьЭлемент</Action>
 		</Command>
 	</Commands>
 </Form>
