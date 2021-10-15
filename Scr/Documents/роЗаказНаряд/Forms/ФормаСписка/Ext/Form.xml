@@ -32,13 +32,15 @@
 			<Button name="ФормаИспытания" id="71">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.Испытания</CommandName>
+				<BackColor>#FFFF99</BackColor>
+				<Font bold="true" kind="AutoFont"/>
 				<LocationInCommandBar>InCommandBar</LocationInCommandBar>
 				<ExtendedTooltip name="ФормаИспытанияРасширеннаяПодсказка" id="72"/>
 			</Button>
-			<Button name="ФормаПечатьКарточки" id="53">
+			<Button name="ФормаПлан" id="100">
 				<Type>CommandBarButton</Type>
-				<CommandName>Form.Command.ПечатьКарточки</CommandName>
-				<ExtendedTooltip name="ФормаПечатьКарточкиРасширеннаяПодсказка" id="54"/>
+				<CommandName>Form.Command.План</CommandName>
+				<ExtendedTooltip name="ФормаПланРасширеннаяПодсказка" id="101"/>
 			</Button>
 			<Button name="ФормаОтчетОборудованиеВРаботе" id="83">
 				<Type>CommandBarButton</Type>
@@ -48,45 +50,84 @@
 				<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
 				<ExtendedTooltip name="ФормаОтчетОборудованиеВРаботеРасширеннаяПодсказка" id="84"/>
 			</Button>
-			<Button name="ФормаСправочникОборудование" id="79">
-				<Type>CommandBarButton</Type>
-				<CommandName>Form.Command.СправочникОборудование</CommandName>
+			<Popup name="Справочники" id="96">
 				<Title>
 					<v8:item>
 						<v8:lang>ru</v8:lang>
-						<v8:content>Справочник Оборудование</v8:content>
+						<v8:content>Справочники</v8:content>
 					</v8:item>
 				</Title>
-				<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
-				<ExtendedTooltip name="ФормаСправочникОборудованиеРасширеннаяПодсказка" id="80"/>
-			</Button>
-			<Button name="ФормаАктЗаМесяц" id="87">
-				<Type>CommandBarButton</Type>
-				<CommandName>Form.Command.АктЗаМесяц</CommandName>
-				<LocationInCommandBar>InCommandBar</LocationInCommandBar>
-				<ExtendedTooltip name="ФормаАктЗаМесяцРасширеннаяПодсказка" id="88"/>
-			</Button>
-			<Button name="ФормаОтчет" id="67">
-				<Type>CommandBarButton</Type>
-				<CommandName>Form.Command.Отчет</CommandName>
-				<ExtendedTooltip name="ФормаОтчетРасширеннаяПодсказка" id="68"/>
-			</Button>
-			<Button name="ФормаСправочникПечатныеФормы" id="85">
-				<Type>CommandBarButton</Type>
-				<CommandName>Form.Command.СправочникПечатныеФормы</CommandName>
-				<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
-				<ExtendedTooltip name="ФормаСправочникПечатныеФормыРасширеннаяПодсказка" id="86"/>
-			</Button>
-			<Button name="ФормаСправочникКонтрагенты" id="92">
-				<Type>CommandBarButton</Type>
-				<CommandName>Form.Command.СправочникКонтрагенты</CommandName>
-				<ExtendedTooltip name="ФормаСправочникКонтрагентыРасширеннаяПодсказка" id="93"/>
-			</Button>
-			<Button name="ФормаМетодичка" id="94">
-				<Type>CommandBarButton</Type>
-				<CommandName>Form.Command.Методичка</CommandName>
-				<ExtendedTooltip name="ФормаМетодичкаРасширеннаяПодсказка" id="95"/>
-			</Button>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Справочники</v8:content>
+					</v8:item>
+				</ToolTip>
+				<ExtendedTooltip name="СправочникиРасширеннаяПодсказка" id="97"/>
+				<ChildItems>
+					<Button name="ФормаСправочникОборудование" id="79">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.СправочникОборудование</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Справочник Оборудование</v8:content>
+							</v8:item>
+						</Title>
+						<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+						<ExtendedTooltip name="ФормаСправочникОборудованиеРасширеннаяПодсказка" id="80"/>
+					</Button>
+					<Button name="ФормаСправочникПечатныеФормы" id="85">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.СправочникПечатныеФормы</CommandName>
+						<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+						<ExtendedTooltip name="ФормаСправочникПечатныеФормыРасширеннаяПодсказка" id="86"/>
+					</Button>
+					<Button name="ФормаСправочникКонтрагенты" id="92">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.СправочникКонтрагенты</CommandName>
+						<ExtendedTooltip name="ФормаСправочникКонтрагентыРасширеннаяПодсказка" id="93"/>
+					</Button>
+				</ChildItems>
+			</Popup>
+			<Popup name="Печать" id="98">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Печать</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Печать</v8:content>
+					</v8:item>
+				</ToolTip>
+				<ExtendedTooltip name="ПечатьРасширеннаяПодсказка" id="99"/>
+				<ChildItems>
+					<Button name="ФормаПечатьКарточки" id="53">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ПечатьКарточки</CommandName>
+						<ExtendedTooltip name="ФормаПечатьКарточкиРасширеннаяПодсказка" id="54"/>
+					</Button>
+					<Button name="ФормаАктЗаМесяц" id="87">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.АктЗаМесяц</CommandName>
+						<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+						<ExtendedTooltip name="ФормаАктЗаМесяцРасширеннаяПодсказка" id="88"/>
+					</Button>
+					<Button name="ФормаОтчет" id="67">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.Отчет</CommandName>
+						<ExtendedTooltip name="ФормаОтчетРасширеннаяПодсказка" id="68"/>
+					</Button>
+					<Button name="ФормаМетодичка" id="94">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.Методичка</CommandName>
+						<ExtendedTooltip name="ФормаМетодичкаРасширеннаяПодсказка" id="95"/>
+					</Button>
+				</ChildItems>
+			</Popup>
 		</ChildItems>
 	</AutoCommandBar>
 	<Events>
@@ -689,6 +730,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>Методичка</Action>
+		</Command>
+		<Command name="План" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>План</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>План</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>План</Action>
 		</Command>
 	</Commands>
 </Form>

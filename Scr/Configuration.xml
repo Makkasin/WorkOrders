@@ -219,6 +219,7 @@
 			<Document>ро_Отгрузка</Document>
 			<Document>ро_ПриходОборудования</Document>
 			<Document>ро_Реестры</Document>
+			<Document>ро_ПланПоЗаказчикам</Document>
 			<Enum>ВидыДокументовДЛяПечФорм</Enum>
 			<Enum>ТипыКонтактнойИнформации</Enum>
 			<Report>БазовыйОтчет</Report>

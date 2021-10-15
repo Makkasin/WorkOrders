@@ -87,7 +87,15 @@
 			<DataPath>тблОборудование</DataPath>
 			<RowFilter xsi:nil="true"/>
 			<ContextMenu name="тблОборудованиеКонтекстноеМеню" id="11"/>
-			<AutoCommandBar name="тблОборудованиеКоманднаяПанель" id="12"/>
+			<AutoCommandBar name="тблОборудованиеКоманднаяПанель" id="12">
+				<ChildItems>
+					<Button name="тблОборудованиеЗаполнитьИзСтатуса" id="66">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ЗаполнитьИзСтатуса</CommandName>
+						<ExtendedTooltip name="тблОборудованиеЗаполнитьИзСтатусаРасширеннаяПодсказка" id="67"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
 			<ExtendedTooltip name="тблОборудованиеРасширеннаяПодсказка" id="13"/>
 			<SearchStringAddition name="тблОборудованиеСтрокаПоиска" id="14">
 				<AdditionSource>
@@ -365,6 +373,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ПечатьДефектныеВедомости</Action>
+		</Command>
+		<Command name="ЗаполнитьИзСтатуса" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить из статуса</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить из статуса</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьИзСтатуса</Action>
 		</Command>
 	</Commands>
 </Form>

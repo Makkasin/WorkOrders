@@ -636,67 +636,193 @@
 											<ContextMenu name="ПроизводительКонтекстноеМеню" id="25"/>
 											<ExtendedTooltip name="ПроизводительРасширеннаяПодсказка" id="26"/>
 										</InputField>
-										<InputField name="КлассГермитичности" id="158">
-											<DataPath>Объект.КлассГерметичности</DataPath>
-											<DropListButton>true</DropListButton>
-											<ChoiceList>
-												<xr:Item>
-													<xr:Presentation/>
-													<xr:CheckState>0</xr:CheckState>
-													<xr:Value xsi:type="FormChoiceListDesTimeValue">
-														<Presentation/>
-														<Value xsi:type="xs:string">A</Value>
-													</xr:Value>
-												</xr:Item>
-												<xr:Item>
-													<xr:Presentation/>
-													<xr:CheckState>0</xr:CheckState>
-													<xr:Value xsi:type="FormChoiceListDesTimeValue">
-														<Presentation/>
-														<Value xsi:type="xs:string">B</Value>
-													</xr:Value>
-												</xr:Item>
-												<xr:Item>
-													<xr:Presentation/>
-													<xr:CheckState>0</xr:CheckState>
-													<xr:Value xsi:type="FormChoiceListDesTimeValue">
-														<Presentation/>
-														<Value xsi:type="xs:string">C</Value>
-													</xr:Value>
-												</xr:Item>
-												<xr:Item>
-													<xr:Presentation/>
-													<xr:CheckState>0</xr:CheckState>
-													<xr:Value xsi:type="FormChoiceListDesTimeValue">
-														<Presentation/>
-														<Value xsi:type="xs:string">-</Value>
-													</xr:Value>
-												</xr:Item>
-											</ChoiceList>
-											<ContextMenu name="КлассГермитичностиКонтекстноеМеню" id="159"/>
-											<ExtendedTooltip name="КлассГермитичностиРасширеннаяПодсказка" id="160"/>
-										</InputField>
-										<InputField name="Пружина" id="291">
-											<DataPath>Объект.НомерПружины</DataPath>
-											<ContextMenu name="ПружинаКонтекстноеМеню" id="292"/>
-											<ExtendedTooltip name="ПружинаРасширеннаяПодсказка" id="293"/>
-										</InputField>
-										<InputField name="УстановочноеДавление" id="294">
-											<DataPath>Объект.УстановочноеДавление</DataPath>
+										<Pages name="грпСтраницыИсп" id="368">
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
-													<v8:content>Установочное давление</v8:content>
+													<v8:content>Грп страницы исп</v8:content>
 												</v8:item>
 											</Title>
-											<ContextMenu name="УстановочноеДавлениеКонтекстноеМеню" id="295"/>
-											<ExtendedTooltip name="УстановочноеДавлениеРасширеннаяПодсказка" id="296"/>
-										</InputField>
-										<InputField name="ДатаИзготовления" id="138">
-											<DataPath>Объект.ДатаИзготовления</DataPath>
-											<ContextMenu name="ДатаИзготовленияКонтекстноеМеню" id="139"/>
-											<ExtendedTooltip name="ДатаИзготовленияРасширеннаяПодсказка" id="140"/>
-										</InputField>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Грп страницы исп</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ExtendedTooltip name="грпСтраницыИспРасширеннаяПодсказка" id="369"/>
+											<ChildItems>
+												<Page name="стрИспОсновная" id="370">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Испытания</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Стр исп основная</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ExtendedTooltip name="стрИспОсновнаяРасширеннаяПодсказка" id="371"/>
+													<ChildItems>
+														<UsualGroup name="Группа17" id="366">
+															<Group>AlwaysHorizontal</Group>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="Группа17РасширеннаяПодсказка" id="367"/>
+															<ChildItems>
+																<InputField name="КлассГермитичности" id="158">
+																	<DataPath>Объект.КлассГерметичности</DataPath>
+																	<DropListButton>true</DropListButton>
+																	<ChoiceList>
+																		<xr:Item>
+																			<xr:Presentation/>
+																			<xr:CheckState>0</xr:CheckState>
+																			<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																				<Presentation/>
+																				<Value xsi:type="xs:string">A</Value>
+																			</xr:Value>
+																		</xr:Item>
+																		<xr:Item>
+																			<xr:Presentation/>
+																			<xr:CheckState>0</xr:CheckState>
+																			<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																				<Presentation/>
+																				<Value xsi:type="xs:string">B</Value>
+																			</xr:Value>
+																		</xr:Item>
+																		<xr:Item>
+																			<xr:Presentation/>
+																			<xr:CheckState>0</xr:CheckState>
+																			<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																				<Presentation/>
+																				<Value xsi:type="xs:string">C</Value>
+																			</xr:Value>
+																		</xr:Item>
+																		<xr:Item>
+																			<xr:Presentation/>
+																			<xr:CheckState>0</xr:CheckState>
+																			<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																				<Presentation/>
+																				<Value xsi:type="xs:string">-</Value>
+																			</xr:Value>
+																		</xr:Item>
+																	</ChoiceList>
+																	<ContextMenu name="КлассГермитичностиКонтекстноеМеню" id="159"/>
+																	<ExtendedTooltip name="КлассГермитичностиРасширеннаяПодсказка" id="160"/>
+																</InputField>
+																<InputField name="ДатаИзготовления" id="138">
+																	<DataPath>Объект.ДатаИзготовления</DataPath>
+																	<ContextMenu name="ДатаИзготовленияКонтекстноеМеню" id="139"/>
+																	<ExtendedTooltip name="ДатаИзготовленияРасширеннаяПодсказка" id="140"/>
+																</InputField>
+															</ChildItems>
+														</UsualGroup>
+														<InputField name="УстановочноеДавление" id="294">
+															<DataPath>Объект.УстановочноеДавление</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Установочное давление</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="УстановочноеДавлениеКонтекстноеМеню" id="295"/>
+															<ExtendedTooltip name="УстановочноеДавлениеРасширеннаяПодсказка" id="296"/>
+														</InputField>
+														<InputField name="Пружина" id="291">
+															<DataPath>Объект.НомерПружины</DataPath>
+															<ContextMenu name="ПружинаКонтекстноеМеню" id="292"/>
+															<ExtendedTooltip name="ПружинаРасширеннаяПодсказка" id="293"/>
+														</InputField>
+													</ChildItems>
+												</Page>
+												<Page name="стрИспПоказатели" id="372">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Показатели</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Стр исп показатели</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ExtendedTooltip name="стрИспПоказателиРасширеннаяПодсказка" id="373"/>
+													<ChildItems>
+														<Table name="Показатели" id="374">
+															<HeightInTableRows>4</HeightInTableRows>
+															<AutoInsertNewRow>true</AutoInsertNewRow>
+															<EnableStartDrag>true</EnableStartDrag>
+															<EnableDrag>true</EnableDrag>
+															<DataPath>Объект.Показатели</DataPath>
+															<RowFilter xsi:nil="true"/>
+															<ContextMenu name="ПоказателиКонтекстноеМеню" id="375"/>
+															<AutoCommandBar name="ПоказателиКоманднаяПанель" id="376"/>
+															<ExtendedTooltip name="ПоказателиРасширеннаяПодсказка" id="377"/>
+															<SearchStringAddition name="ПоказателиСтрокаПоиска" id="378">
+																<AdditionSource>
+																	<Item>Показатели</Item>
+																	<Type>SearchStringRepresentation</Type>
+																</AdditionSource>
+																<ContextMenu name="ПоказателиСтрокаПоискаКонтекстноеМеню" id="379"/>
+																<ExtendedTooltip name="ПоказателиСтрокаПоискаРасширеннаяПодсказка" id="380"/>
+															</SearchStringAddition>
+															<ViewStatusAddition name="ПоказателиСостояниеПросмотра" id="381">
+																<AdditionSource>
+																	<Item>Показатели</Item>
+																	<Type>ViewStatusRepresentation</Type>
+																</AdditionSource>
+																<ContextMenu name="ПоказателиСостояниеПросмотраКонтекстноеМеню" id="382"/>
+																<ExtendedTooltip name="ПоказателиСостояниеПросмотраРасширеннаяПодсказка" id="383"/>
+															</ViewStatusAddition>
+															<SearchControlAddition name="ПоказателиУправлениеПоиском" id="384">
+																<AdditionSource>
+																	<Item>Показатели</Item>
+																	<Type>SearchControl</Type>
+																</AdditionSource>
+																<ContextMenu name="ПоказателиУправлениеПоискомКонтекстноеМеню" id="385"/>
+																<ExtendedTooltip name="ПоказателиУправлениеПоискомРасширеннаяПодсказка" id="386"/>
+															</SearchControlAddition>
+															<ChildItems>
+																<LabelField name="ПоказателиНомерСтроки" id="387">
+																	<DataPath>Объект.Показатели.LineNumber</DataPath>
+																	<EditMode>EnterOnInput</EditMode>
+																	<ContextMenu name="ПоказателиНомерСтрокиКонтекстноеМеню" id="388"/>
+																	<ExtendedTooltip name="ПоказателиНомерСтрокиРасширеннаяПодсказка" id="389"/>
+																</LabelField>
+																<InputField name="ПоказателиПок1" id="390">
+																	<DataPath>Объект.Показатели.Показатель1</DataPath>
+																	<EditMode>EnterOnInput</EditMode>
+																	<ContextMenu name="ПоказателиПок1КонтекстноеМеню" id="391"/>
+																	<ExtendedTooltip name="ПоказателиПок1РасширеннаяПодсказка" id="392"/>
+																</InputField>
+																<InputField name="ПоказателиПок2" id="393">
+																	<DataPath>Объект.Показатели.Показатель2</DataPath>
+																	<EditMode>EnterOnInput</EditMode>
+																	<ContextMenu name="ПоказателиПок2КонтекстноеМеню" id="394"/>
+																	<ExtendedTooltip name="ПоказателиПок2РасширеннаяПодсказка" id="395"/>
+																</InputField>
+																<InputField name="ПоказателиПок3" id="396">
+																	<DataPath>Объект.Показатели.Показатель3</DataPath>
+																	<EditMode>EnterOnInput</EditMode>
+																	<ContextMenu name="ПоказателиПок3КонтекстноеМеню" id="397"/>
+																	<ExtendedTooltip name="ПоказателиПок3РасширеннаяПодсказка" id="398"/>
+																</InputField>
+																<InputField name="ПоказателиПок4" id="399">
+																	<DataPath>Объект.Показатели.Показатель4</DataPath>
+																	<EditMode>EnterOnInput</EditMode>
+																	<ContextMenu name="ПоказателиПок4КонтекстноеМеню" id="400"/>
+																	<ExtendedTooltip name="ПоказателиПок4РасширеннаяПодсказка" id="401"/>
+																</InputField>
+															</ChildItems>
+														</Table>
+													</ChildItems>
+												</Page>
+											</ChildItems>
+										</Pages>
 										<UsualGroup name="Группа4" id="93">
 											<Group>Vertical</Group>
 											<Representation>StrongSeparation</Representation>

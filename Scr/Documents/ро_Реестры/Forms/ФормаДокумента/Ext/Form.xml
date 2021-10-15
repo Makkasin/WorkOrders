@@ -292,6 +292,8 @@
 									<Button name="ЗаказНарядыОткрытьРегЦен" id="192">
 										<Type>CommandBarButton</Type>
 										<CommandName>Form.Command.ОткрытьРегЦен</CommandName>
+										<BackColor>#FFCC00</BackColor>
+										<Font bold="true" kind="AutoFont"/>
 										<ExtendedTooltip name="ЗаказНарядыОткрытьРегЦенРасширеннаяПодсказка" id="193"/>
 									</Button>
 								</ChildItems>

@@ -320,6 +320,31 @@
 						</Table>
 					</ChildItems>
 				</Page>
+				<Page name="стрТекстЗапроса" id="113">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Текст запроса</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Стр текст запроса</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="стрТекстЗапросаРасширеннаяПодсказка" id="114"/>
+					<ChildItems>
+						<InputField name="ТекстЗапроса" id="115">
+							<DataPath>Объект.ТекстЗапроса</DataPath>
+							<HorizontalStretch>true</HorizontalStretch>
+							<MultiLine>true</MultiLine>
+							<ExtendedEdit>true</ExtendedEdit>
+							<ContextMenu name="ТекстЗапросаКонтекстноеМеню" id="116"/>
+							<ExtendedTooltip name="ТекстЗапросаРасширеннаяПодсказка" id="117"/>
+						</InputField>
+					</ChildItems>
+				</Page>
 			</ChildItems>
 		</Pages>
 	</ChildItems>
