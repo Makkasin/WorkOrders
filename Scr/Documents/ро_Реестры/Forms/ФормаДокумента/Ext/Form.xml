@@ -353,6 +353,9 @@
 									<HorizontalStretch>false</HorizontalStretch>
 									<ContextMenu name="ЗаказНарядыНомерЗаказНарядаКонтекстноеМеню" id="64"/>
 									<ExtendedTooltip name="ЗаказНарядыНомерЗаказНарядаРасширеннаяПодсказка" id="65"/>
+									<Events>
+										<Event name="OnChange">ЗаказНарядыНомерЗаказНарядаПриИзменении</Event>
+									</Events>
 								</InputField>
 								<LabelField name="ЗаказНарядыЗаказНарядОборудованиеРодитель" id="47">
 									<DataPath>Объект.ЗаказНаряды.ГруппаРодитель</DataPath>
